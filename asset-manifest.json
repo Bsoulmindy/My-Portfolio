@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.155bdf6a.css",
-    "main.js": "/static/js/main.02656ab2.js",
-    "static/js/787.e8871c4f.chunk.js": "/static/js/787.e8871c4f.chunk.js",
-    "static/media/React.png": "/static/media/React.8a6fc0a24a800d1e0f4a.png",
-    "static/media/Python-logo.png": "/static/media/Python-logo.67a96446f70ae7be72e9.png",
-    "static/media/Web_Development.png": "/static/media/Web_Development.4c6777f1e93a2dab47b5.png",
-    "static/media/JavaScript_logo.png": "/static/media/JavaScript_logo.bb54340fef3a4c9fbb89.png",
-    "static/media/jQuery.png": "/static/media/jQuery.7c16ef98ee6e9d838a78.png",
-    "static/media/Laravel.png": "/static/media/Laravel.8b2939ca7ad8851c40a2.png",
-    "static/media/Communication.png": "/static/media/Communication.75accbd284f4da86a2cd.png",
-    "static/media/page_language.svg": "/static/media/page_language.14fa33289af00c5c819407a81e6f114f.svg",
-    "static/media/C++_logo.svg": "/static/media/C++_logo.2441702dffa95ca3c92c20816e386640.svg",
-    "index.html": "/index.html",
-    "main.155bdf6a.css.map": "/static/css/main.155bdf6a.css.map",
-    "main.02656ab2.js.map": "/static/js/main.02656ab2.js.map",
-    "787.e8871c4f.chunk.js.map": "/static/js/787.e8871c4f.chunk.js.map"
+    "main.css": "/My-CV/static/css/main.155bdf6a.css",
+    "main.js": "/My-CV/static/js/main.1a9f491c.js",
+    "static/js/787.e8871c4f.chunk.js": "/My-CV/static/js/787.e8871c4f.chunk.js",
+    "static/media/React.png": "/My-CV/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Python-logo.png": "/My-CV/static/media/Python-logo.67a96446f70ae7be72e9.png",
+    "static/media/Web_Development.png": "/My-CV/static/media/Web_Development.4c6777f1e93a2dab47b5.png",
+    "static/media/JavaScript_logo.png": "/My-CV/static/media/JavaScript_logo.bb54340fef3a4c9fbb89.png",
+    "static/media/jQuery.png": "/My-CV/static/media/jQuery.7c16ef98ee6e9d838a78.png",
+    "static/media/Laravel.png": "/My-CV/static/media/Laravel.8b2939ca7ad8851c40a2.png",
+    "static/media/Communication.png": "/My-CV/static/media/Communication.75accbd284f4da86a2cd.png",
+    "static/media/page_language.svg": "/My-CV/static/media/page_language.14fa33289af00c5c819407a81e6f114f.svg",
+    "static/media/C++_logo.svg": "/My-CV/static/media/C++_logo.2441702dffa95ca3c92c20816e386640.svg",
+    "index.html": "/My-CV/index.html",
+    "main.155bdf6a.css.map": "/My-CV/static/css/main.155bdf6a.css.map",
+    "main.1a9f491c.js.map": "/My-CV/static/js/main.1a9f491c.js.map",
+    "787.e8871c4f.chunk.js.map": "/My-CV/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.155bdf6a.css",
-    "static/js/main.02656ab2.js"
+    "static/js/main.1a9f491c.js"
   ]
 }
