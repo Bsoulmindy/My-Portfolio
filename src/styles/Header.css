@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header>.select_language {
+    border: 1px solid var(--primary-dark);
+    display: flex;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.header>.select_language:hover {
+    box-shadow: 0 0 5rem var(--primary-dark);
+}
+
+.header .language_icon {
+    height: 16px;
+    width: 16px;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.header .page_language {
+    background-color: inherit;
+    height: 35px;
+    width: 60px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.toggle_image {
+    height: 16px;
+    width: 16px;
+    align-self: center;
+}
+
+.toggle_button {
+    background-color: inherit;
+    border: 0px;
+    margin: 0 5px 0 1px;
+    display: flex;
+    cursor: pointer;
+}
+
+.toggle_button.dark_mode {
+    fill: #FFF;
+}
+
+.toggle_mode:hover {
+    box-shadow: 0 0 5rem var(--primary-dark);
+}
+
+.toggle_button.light_mode {
+    fill: #000;
+}
+
+.toggle_mode {
+    margin: 0 2rem;
+    display: flex;
+    border: 1px solid var(--primary-dark);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.toggle_mode_text {
+    align-self: center;
+    margin: 0 2rem 0 0;
+}
+
+.version {
+    align-self: center;
+    width: 100%;
+    font-size: larger;
+}

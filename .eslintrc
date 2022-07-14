@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:jest/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "no-console": "warn",
+        "no-unused-vars": "warn"
+    },
+    "plugins": ["react"]
+}

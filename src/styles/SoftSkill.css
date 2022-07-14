@@ -1,0 +1,36 @@
+.soft_skill {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.soft_skill_icon_dark {
+    filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(332deg) brightness(104%) contrast(100%);
+}
+
+.soft_skill_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+}
+
+@media all and (max-width: 768px) {
+    .soft_skill_name {
+        margin: 0 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .soft_skill {
+        width: 100%;
+    }
+
+    .soft_skill_name {
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+}

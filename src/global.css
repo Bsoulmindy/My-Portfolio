@@ -1,0 +1,81 @@
+:root {
+    --progress-expert: rgb(0, 170, 0);
+    --progress-medium: rgb(164, 167, 0);
+    --progress-beginner: rgb(168, 11, 0);
+}
+
+* {
+    color: var(--primary-dark);
+    font-family: 'Stratum2', 'Courier New', Courier, monospace;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+body {
+    background-color: var(--background-dark);
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 10rem 0 2rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.is-visible {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    opacity: 1;
+}
+
+.domains_container:not(.is-visible),
+.profile_description:not(.is-visible),
+.soft_skills:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.image-white {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(159deg) brightness(104%) contrast(102%);
+}
+
+.image-dark {
+    filter: invert(0%) sepia(5%) saturate(24%) hue-rotate(228deg) brightness(102%) contrast(100%);
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes progressIn {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

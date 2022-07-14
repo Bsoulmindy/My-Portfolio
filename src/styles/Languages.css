@@ -1,0 +1,111 @@
+.languages_container {
+    margin: 10rem 0;
+}
+
+.languages_title {
+    font-size: xx-large;
+}
+
+.language_logo {
+    width: 15rem;
+    text-align: center;
+    font-size: large;
+}
+
+.language_image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.language_progress_container {
+    display: flex;
+    height: 2rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: var(--secondary-dark);
+    border-radius: .25rem;
+    margin: 1rem 0;
+}
+
+.language_progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
+}
+
+.language_progress.is-visible {
+    width: 100%;
+    animation-name: progressIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.language_years {
+    width: 15rem;
+    text-align: center;
+    font-size: large;
+}
+
+@media all and (max-width: 768px) {
+    .languages_title {
+        font-size: x-large;
+    }
+
+    .language_logo {
+        width: 10rem;
+        font-size: medium;
+    }
+
+    .language_image {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .language_progress_container {
+        height: 1.5rem;
+    }
+
+    .language_progress_container {
+        margin: .75rem 0;
+    }
+
+    .language_years {
+        width: 10rem;
+        font-size: medium;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .languages_title {
+        font-size: large;
+    }
+
+    .language_logo {
+        width: 5rem;
+        font-size: small;
+    }
+
+    .language_image {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .language_progress_container {
+        height: 1rem;
+    }
+
+    .language_progress_container {
+        margin: .5rem 0;
+    }
+
+    .language_years {
+        width: 5rem;
+        font-size: small;
+    }
+}

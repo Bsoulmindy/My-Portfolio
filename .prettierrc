@@ -1,0 +1,8 @@
+{
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 4,
+    "bracketSameLine": true,
+    "singleAttributePerLine": false,
+    "max_line_length": 120
+}

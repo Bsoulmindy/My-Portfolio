@@ -1,0 +1,22 @@
+.soft_skills_container {
+    margin: 2rem 2rem 8rem 2rem;
+}
+
+.soft_skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width: 768px) {
+    .soft_skills_container {
+        margin: 1.5rem 1.5rem 6rem 1.5rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .soft_skills_container {
+        margin: 1rem 1rem 4rem 1rem;
+    }
+}
