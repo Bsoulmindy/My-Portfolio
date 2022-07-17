@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/My-CV/static/css/main.155bdf6a.css",
-    "main.js": "/My-CV/static/js/main.1a9f491c.js",
-    "static/js/787.e8871c4f.chunk.js": "/My-CV/static/js/787.e8871c4f.chunk.js",
-    "static/media/React.png": "/My-CV/static/media/React.8a6fc0a24a800d1e0f4a.png",
-    "static/media/Python-logo.png": "/My-CV/static/media/Python-logo.67a96446f70ae7be72e9.png",
-    "static/media/Web_Development.png": "/My-CV/static/media/Web_Development.4c6777f1e93a2dab47b5.png",
-    "static/media/JavaScript_logo.png": "/My-CV/static/media/JavaScript_logo.bb54340fef3a4c9fbb89.png",
-    "static/media/jQuery.png": "/My-CV/static/media/jQuery.7c16ef98ee6e9d838a78.png",
-    "static/media/Laravel.png": "/My-CV/static/media/Laravel.8b2939ca7ad8851c40a2.png",
-    "static/media/Communication.png": "/My-CV/static/media/Communication.75accbd284f4da86a2cd.png",
-    "static/media/page_language.svg": "/My-CV/static/media/page_language.14fa33289af00c5c819407a81e6f114f.svg",
-    "static/media/C++_logo.svg": "/My-CV/static/media/C++_logo.2441702dffa95ca3c92c20816e386640.svg",
-    "index.html": "/My-CV/index.html",
-    "main.155bdf6a.css.map": "/My-CV/static/css/main.155bdf6a.css.map",
-    "main.1a9f491c.js.map": "/My-CV/static/js/main.1a9f491c.js.map",
-    "787.e8871c4f.chunk.js.map": "/My-CV/static/js/787.e8871c4f.chunk.js.map"
+    "main.css": "/My-Portfolio/static/css/main.155bdf6a.css",
+    "main.js": "/My-Portfolio/static/js/main.15a17f3b.js",
+    "static/js/787.e8871c4f.chunk.js": "/My-Portfolio/static/js/787.e8871c4f.chunk.js",
+    "static/media/React.png": "/My-Portfolio/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Python-logo.png": "/My-Portfolio/static/media/Python-logo.67a96446f70ae7be72e9.png",
+    "static/media/Web_Development.png": "/My-Portfolio/static/media/Web_Development.4c6777f1e93a2dab47b5.png",
+    "static/media/JavaScript_logo.png": "/My-Portfolio/static/media/JavaScript_logo.bb54340fef3a4c9fbb89.png",
+    "static/media/jQuery.png": "/My-Portfolio/static/media/jQuery.7c16ef98ee6e9d838a78.png",
+    "static/media/Laravel.png": "/My-Portfolio/static/media/Laravel.8b2939ca7ad8851c40a2.png",
+    "static/media/Communication.png": "/My-Portfolio/static/media/Communication.75accbd284f4da86a2cd.png",
+    "static/media/page_language.svg": "/My-Portfolio/static/media/page_language.14fa33289af00c5c819407a81e6f114f.svg",
+    "static/media/C++_logo.svg": "/My-Portfolio/static/media/C++_logo.2441702dffa95ca3c92c20816e386640.svg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.155bdf6a.css.map": "/My-Portfolio/static/css/main.155bdf6a.css.map",
+    "main.15a17f3b.js.map": "/My-Portfolio/static/js/main.15a17f3b.js.map",
+    "787.e8871c4f.chunk.js.map": "/My-Portfolio/static/js/787.e8871c4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.155bdf6a.css",
-    "static/js/main.1a9f491c.js"
+    "static/js/main.15a17f3b.js"
   ]
 }
