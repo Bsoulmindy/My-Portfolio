@@ -1,10 +1,10 @@
-# My-CV
+# My-Portfolio
 
 The objective of this project is to create my resume as a website, which it interacts nicely with anyone who wants to know me.
 
 # About master branch
 
-This branch shows the source code which is used in the [website deployed](https://bsoulmindy.github.io/My-CV/).
+This branch shows the source code which is used in my [portfolio](https://bsoulmindy.github.io/My-Portfolio/).
 
 Of course you can get inspired by the source code.
 
