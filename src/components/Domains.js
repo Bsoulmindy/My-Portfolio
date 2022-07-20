@@ -39,7 +39,7 @@ function Domains() {
     };
 
     return (
-        <section>
+        <section id="domains">
             <h1>{getData(language).title_domains}</h1>
             <div className="domains_container">
                 {domains.map((domain, index) => (

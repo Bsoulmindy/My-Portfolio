@@ -12,7 +12,7 @@ function Profile() {
 
     return (
         <React.Fragment>
-            <section className="profile_container">
+            <section className="profile_container" id="profile">
                 <img src={image} alt={data.photo_alt} />
                 <div className="profile_infos">
                     <h3>{data.fullname}</h3>

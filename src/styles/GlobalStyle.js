@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { useContext } from "react";
 import { DarkContext } from "../utils/DarkContext";
+import backgroundImage from "../assets/grid.png";
 
 const StyledGlobalStyle = createGlobalStyle`
         :root {
@@ -16,6 +17,14 @@ const StyledGlobalStyle = createGlobalStyle`
                 isDarkMode ? "rgb(51, 51, 51)" : "rgb(205, 205, 205)"};
             --background-dark: ${({ isDarkMode }) =>
                 isDarkMode ? "rgb(32, 32, 32)" : "rgb(224, 224, 224)"};
+        }
+
+        body {
+            background-image: url(${backgroundImage});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     `;
 

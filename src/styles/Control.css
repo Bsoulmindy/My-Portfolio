@@ -1,0 +1,44 @@
+.control {
+    cursor: pointer;
+    background-color: var(--secondary-light);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--secondary-light);
+}
+
+.control:hover {
+    background-color: var(--secondary-dark);
+}
+
+.control_active {
+    background-color: var(--secondary-dark);
+    transition: all .4s ease-in-out;
+}
+
+.control svg {
+    width: 23px;
+    height: 23px;
+}
+
+.control svg {
+    fill: var(--secondary-dark);
+}
+
+.control:hover svg {
+    fill: var(--secondary-light);
+}
+
+.control_active svg {
+    fill: var(--secondary-light);
+}
+
+@media (max-width: 768px) {
+    .control {
+        margin: 1rem 0.3rem !important;
+    }
+}

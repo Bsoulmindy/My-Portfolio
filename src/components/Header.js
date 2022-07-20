@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 import ToggleModeButton from "./ToggleModeButton";
 import { DarkContext } from "../utils/DarkContext";
-import { getData, version } from "../data/data";
+import { getData, translations, version } from "../data/data";
 
 function Header() {
     const { language, selectLanguage } = useContext(LanguageContext);
@@ -17,7 +17,7 @@ function Header() {
     };
 
     return (
-        <header className="header">
+        <header className="header" id="header">
             <div className="select_language">
                 <img
                     src={page_language}
@@ -31,8 +31,11 @@ function Header() {
                     className="page_language"
                     defaultValue={language}
                     onChange={changeLanguage}>
-                    <option value="en">EN</option>
-                    <option value="fr">FR</option>
+                    {translations.map((translation) => (
+                        <option key={translation} value={translation}>
+                            {translation.toUpperCase()}
+                        </option>
+                    ))}
                 </select>
             </div>
             <div className="toggle_mode" onClick={toggleMode}>

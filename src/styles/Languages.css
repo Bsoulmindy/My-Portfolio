@@ -20,11 +20,11 @@
 
 .language_progress_container {
     display: flex;
-    height: 2rem;
+    height: 1rem;
     overflow: hidden;
     font-size: .75rem;
     background-color: var(--secondary-dark);
-    border-radius: .25rem;
+    border-radius: 1rem;
     margin: 1rem 0;
 }
 
@@ -68,7 +68,7 @@
     }
 
     .language_progress_container {
-        height: 1.5rem;
+        height: 1rem;
     }
 
     .language_progress_container {

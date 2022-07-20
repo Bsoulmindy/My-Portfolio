@@ -1,6 +1,6 @@
 # My-Portfolio
 
-The objective of this project is to create my resume as a website, which it interacts nicely with anyone who wants to know me.
+The objective of this project is to create my portfolio website, which it interacts nicely with anyone who wants to know me.
 
 # About master branch
 
@@ -19,6 +19,20 @@ Of course you can get inspired by the source code.
     - Folder `scripts` : Javascript pure files
     - Folder `styles` : Css files
     - Folder `utils` : Contexts used (darkmode, translation...)
+
+# Version history
+
+-   `1.1.0`
+
+    -   Implemented a navbar for scrolling
+    -   Added a background image
+    -   Created some tests
+        -   Data verification
+        -   Rendering the application
+    -   Minor changes
+
+-   `1.0.0`
+    -   Project Initial
 
 # License
 

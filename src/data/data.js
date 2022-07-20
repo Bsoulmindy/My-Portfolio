@@ -1,5 +1,5 @@
 import Factory from "../assets/Factory.png";
-import Cplusplus from "../assets/C++_logo.svg";
+import Cplusplus from "../assets/Cplusplus_logo.svg";
 import Javascript from "../assets/JavaScript_logo.png";
 import Java from "../assets/Java_logo.png";
 import Python from "../assets/Python-logo.png";
@@ -17,7 +17,9 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.0.0";
+export const version = "v1.1.0";
+
+export const translations = ["en", "fr"];
 
 export function getData(lang) {
     switch (lang) {

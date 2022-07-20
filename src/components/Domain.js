@@ -12,7 +12,11 @@ function Domain({ index, name, image, selected, onClick }) {
     const container = document.getElementById(index);
     if (container == null) {
         return (
-            <div id={index} className="domain_container" onClick={onClick}>
+            <div
+                id={index}
+                className="domain_container"
+                onClick={onClick}
+                data-testid="domain">
                 {content}
             </div>
         );

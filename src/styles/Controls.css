@@ -1,0 +1,25 @@
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: row !important;
+        top: auto !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translate(-50%) !important;
+        width: 100% !important;
+        background-color: var(--secondary-light) !important;
+    }
+}

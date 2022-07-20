@@ -8,7 +8,7 @@ function SoftSkills() {
     const { language } = useContext(LanguageContext);
 
     return (
-        <section className="soft_skills_container">
+        <section className="soft_skills_container" id="soft_skills">
             <h1>{getData(language).soft_skills}</h1>
             <div className="soft_skills">
                 {soft_skills.map((skill, index) => (

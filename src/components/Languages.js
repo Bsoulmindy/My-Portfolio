@@ -30,7 +30,7 @@ function Languages() {
     });
 
     return (
-        <section className="languages_container">
+        <section className="languages_container" id="languages">
             <h1>{getData(language).title_languages}</h1>
             <table id="languages_table" width="100%">
                 <thead>
