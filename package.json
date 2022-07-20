@@ -16,6 +16,7 @@
         "react-scripts": "5.0.1",
         "smoothscroll-polyfill": "^0.4.4",
         "styled-components": "^5.3.5",
+        "terser": "^5.14.2",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
