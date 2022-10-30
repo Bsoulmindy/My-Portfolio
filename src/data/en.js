@@ -16,6 +16,8 @@ const en = {
     soft_skills: "My Soft-Skills",
     darkmode: "Dark",
     lightmode: "Light",
+    resumeDownload: "Get Resume",
+    resumeURL: "https://github.com/Bsoulmindy/My-Portfolio/raw/master/cv.pdf",
 };
 
 export default en;

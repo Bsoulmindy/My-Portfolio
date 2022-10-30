@@ -22,6 +22,12 @@ Of course you can get inspired by the source code.
 
 # Version history
 
+-   `1.2.0`
+
+    -   Resume is now available
+    -   Added other medias
+    -   Updated data (projects, languages...)
+
 -   `1.1.0`
 
     -   Implemented a navbar for scrolling

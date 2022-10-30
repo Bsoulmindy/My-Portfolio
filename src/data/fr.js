@@ -16,6 +16,9 @@ const en = {
     soft_skills: "Mes Soft-Skills",
     darkmode: "Sombre",
     lightmode: "Clair",
+    resumeDownload: "Télécharger CV",
+    resumeURL:
+        "https://github.com/Bsoulmindy/My-Portfolio/raw/master/cv_fr.pdf",
 };
 
 export default en;

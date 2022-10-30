@@ -46,7 +46,10 @@ function Languages() {
                             className="languages_stat"
                             key={"languages_" + language.name}>
                             <td className="language_logo">
-                                <a href={language.link}>
+                                <a
+                                    href={language.link}
+                                    target="_blank"
+                                    rel="noreferrer">
                                     <img
                                         className="language_image"
                                         src={language.logo}
