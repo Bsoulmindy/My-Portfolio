@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/Project.css";
 
-function Project({ index, name, image, link, description }) {
+function Project({ index, name, image, link = "#", description = "" }) {
     const projectCss = "project " + (index === 0 ? "" : "project-top-bordered");
 
     const content = (
@@ -32,11 +32,6 @@ Project.propTypes = {
     image: PropTypes.string.isRequired,
     link: PropTypes.string,
     description: PropTypes.string,
-};
-
-Project.defaultProps = {
-    link: "#",
-    description: "",
 };
 
 export default Project;

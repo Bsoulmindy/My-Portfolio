@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/Framework.css";
 
-function Framework({ name, image, link }) {
+function Framework({ name, image, link = "#" }) {
     const content = (
         <div className="framework_container">
             <div className="framework_image">
@@ -29,10 +29,6 @@ Framework.propTypes = {
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     link: PropTypes.string,
-};
-
-Framework.defaultProps = {
-    link: "#",
 };
 
 export default Framework;

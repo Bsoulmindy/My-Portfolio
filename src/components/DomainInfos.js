@@ -64,8 +64,5 @@ function DomainInfos({ domainSelected }) {
 DomainInfos.propTypes = {
     domainSelected: PropTypes.string.isRequired,
 };
-DomainInfos.defaultProps = {
-    domainSelected: "",
-};
 
 export default DomainInfos;
