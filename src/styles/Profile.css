@@ -6,27 +6,26 @@
     width: 100%;
 }
 
-.profile_container>img {
+.profile_container > img {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     margin: auto 0;
 }
 
-.profile_container>.profile_infos {
+.profile_container > .profile_infos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 2rem;
 }
 
-.profile_container>.profile_infos>h3 {
+.profile_container > .profile_infos > h3 {
     font-size: xx-large;
     margin-bottom: 0;
-    margin-top: auto;
 }
 
-.profile_container>.profile_infos>.profile_speciality {
+.profile_container > .profile_infos > .profile_speciality {
     font-size: larger;
     color: var(--tertiary-dark);
 }
@@ -42,7 +41,7 @@
     width: fit-content;
 }
 
-.profile_resume>div {
+.profile_resume > div {
     border: 1px solid var(--primary-dark);
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -53,12 +52,12 @@
     fill: var(--primary-dark);
 }
 
-.profile_resume>div>svg {
+.profile_resume > div > svg {
     height: 1.3rem;
     margin-right: 0.5rem;
 }
 
-.profile_resume>div:hover {
+.profile_resume > div:hover {
     box-shadow: 0 0 2rem var(--primary-dark);
     background-color: var(--primary-dark);
     color: var(--primary-light);
@@ -68,23 +67,24 @@
 .profile_media {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 @media all and (max-width: 768px) {
-    .profile_container>img {
+    .profile_container > img {
         width: 8rem;
         height: 8rem;
     }
 
-    .profile_container>.profile_infos {
+    .profile_container > .profile_infos {
         margin: 0 1.5rem;
     }
 
-    .profile_container>.profile_infos>h3 {
+    .profile_container > .profile_infos > h3 {
         font-size: x-large;
     }
 
-    .profile_container>.profile_infos>.profile_speciality {
+    .profile_container > .profile_infos > .profile_speciality {
         font-size: large;
     }
 
@@ -94,20 +94,20 @@
 }
 
 @media all and (max-width: 600px) {
-    .profile_container>img {
+    .profile_container > img {
         width: 6rem;
         height: 6rem;
     }
 
-    .profile_container>.profile_infos {
+    .profile_container > .profile_infos {
         margin: 0 1rem;
     }
 
-    .profile_container>.profile_infos>h3 {
+    .profile_container > .profile_infos > h3 {
         font-size: larger;
     }
 
-    .profile_container>.profile_infos>.profile_speciality {
+    .profile_container > .profile_infos > .profile_speciality {
         font-size: medium;
     }
 

@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 1rem;
+    align-items: center;
 }
 
 .project_image {
@@ -36,7 +37,7 @@
 
 @media all and (max-width: 768px) {
     .project {
-        padding: .75rem;
+        padding: 0.75rem;
     }
 
     .project_image {
@@ -57,7 +58,7 @@
 
 @media all and (max-width: 600px) {
     .project {
-        padding: .5rem;
+        padding: 0.5rem;
     }
 
     .project_image {

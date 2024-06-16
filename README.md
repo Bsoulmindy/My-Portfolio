@@ -24,7 +24,6 @@ Of course you can get inspired by the source code.
 
 -   `1.2.0`
 
-    -   Resume is now available
     -   Added other medias
     -   Updated data (projects, languages...)
 

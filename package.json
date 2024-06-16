@@ -6,7 +6,6 @@
     "dependencies": {
         "@babel/eslint-parser": "^7.18.2",
         "@testing-library/jest-dom": "^5.16.4",
-        "@testing-library/react": "^13.3.0",
         "@testing-library/user-event": "^13.5.0",
         "nth-check": "^2.1.1",
         "prettier": "^2.7.1",
@@ -16,8 +15,7 @@
         "smoothscroll-polyfill": "^0.4.4",
         "styled-components": "^5.3.5",
         "terser": "^5.14.2",
-        "web-vitals": "^2.1.4",
-        "postcss": "^8.4.31"
+        "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -46,9 +44,12 @@
         ]
     },
     "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+        "@testing-library/react": "^16.0.0",
         "gh-pages": "^6.1.1",
-        "react-scripts": "^5.0.1",
-        "postcss": "^8.4.31"
+        "postcss": "^8.4.31",
+        "react-scripts": "^5.0.1"
     },
     "jest": {
         "collectCoverageFrom": [
