@@ -16,7 +16,8 @@
         "smoothscroll-polyfill": "^0.4.4",
         "styled-components": "^5.3.5",
         "terser": "^5.14.2",
-        "web-vitals": "^2.1.4"
+        "web-vitals": "^2.1.4",
+        "postcss": "^8.4.31"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -47,7 +48,7 @@
     "devDependencies": {
         "gh-pages": "^6.1.1",
         "react-scripts": "^5.0.1",
-        "postcss": ">=8.4.31"
+        "postcss": "^8.4.31"
     },
     "jest": {
         "collectCoverageFrom": [
