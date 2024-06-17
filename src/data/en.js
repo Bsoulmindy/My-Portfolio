@@ -1,9 +1,9 @@
 const en = {
     fullname: "Oussama Moustadraf",
     photo_alt: "Oussama Moustadraf's photo",
-    speciality: "Software Engineer Student",
+    speciality: "Software Engineer - Mid-Level",
     description:
-        "I am a software engineer student at ENSA Agadir, and passionate about computer science.",
+        "Software engineering is not just about instructing machines what to do; it's about understanding their intricacies and resolving their issues with empathy.",
     title_languages: "My programming languages",
     language: "Language",
     experience: "My experience",
@@ -16,8 +16,6 @@ const en = {
     soft_skills: "My Soft-Skills",
     darkmode: "Dark",
     lightmode: "Light",
-    resumeDownload: "Get Resume",
-    resumeURL: "https://github.com/Bsoulmindy/My-Portfolio/raw/master/cv.pdf",
 };
 
 export default en;

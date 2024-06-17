@@ -3,7 +3,7 @@ const en = {
     photo_alt: "Photo d'Oussama Moustadraf",
     speciality: "Étudiant en ingénierie informatique",
     description:
-        "Je suis étudiant en génie informatique à ENSA Agadir, et passionné par le développement informatique.",
+        "Le génie logiciel ne consiste pas seulement à indiquer aux machines quoi faire ; il s'agit de comprendre leurs subtilités et de résoudre leurs problèmes avec empathie.",
     title_languages: "Mes languages de programmation",
     language: "Language",
     experience: "Ma expérience",
@@ -16,9 +16,6 @@ const en = {
     soft_skills: "Mes Soft-Skills",
     darkmode: "Sombre",
     lightmode: "Clair",
-    resumeDownload: "Télécharger CV",
-    resumeURL:
-        "https://github.com/Bsoulmindy/My-Portfolio/raw/master/cv_fr.pdf",
 };
 
 export default en;

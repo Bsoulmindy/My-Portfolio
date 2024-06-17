@@ -11,13 +11,15 @@ import WebDevelopment from "../assets/Web_Development.png";
 import AppDevelopment from "../assets/App_Development.png";
 import Urbit from "../assets/Urbit.png";
 import RegionsMusic from "../assets/regions-music.png";
-import CSGOMarketAnalyzer from "../assets/csgo-market-analyzer.png";
+import Fantastic from "../assets/fantastic.png";
+import RevisionAssistantIcon from "../assets/revision_assistant_icon.png";
 import jQuery from "../assets/jQuery.png";
 import React from "../assets/React.png";
 import Laravel from "../assets/Laravel.png";
 import Spring from "../assets/Spring.png";
 import Flutter from "../assets/Flutter.png";
 import Boost from "../assets/Boost.png";
+import Qt from "../assets/qt.png";
 import Communication from "../assets/Communication.png";
 import ProblemSolving from "../assets/Problem_Solving.png";
 import Teamwork from "../assets/Teamwork.png";
@@ -46,13 +48,13 @@ export const image = Factory;
 export const languages = [
     {
         name: "JavaScript",
-        years: 1,
+        years: 1.5,
         logo: Javascript,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
         name: "C++",
-        years: 4,
+        years: 3,
         logo: Cplusplus,
         link: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
@@ -70,7 +72,7 @@ export const languages = [
     },
     {
         name: "Dart",
-        years: 0.5,
+        years: 1,
         logo: Dart,
         link: "https://en.wikipedia.org/wiki/Dart_(programming_language)",
     },
@@ -129,8 +131,22 @@ export const domains = [
                 image: Boost,
                 link: "https://www.boost.org/",
             },
+            {
+                name: "Qt",
+                image: Qt,
+                link: "https://www.qt.io/",
+            },
         ],
         projects: [
+            {
+                name: "Revision Assistant",
+                image: RevisionAssistantIcon,
+                link: "https://revision-assistant.vercel.app/",
+                description: {
+                    en: "A cross-platform app that selects random questions and the user should guess the right answer, or vice versa",
+                    fr: "Une application multiplateforme qui sélectionne des questions aléatoires et l'utilisateur doit deviner la bonne réponse, ou vice versa",
+                },
+            },
             {
                 name: "Regions Music",
                 image: RegionsMusic,
@@ -141,12 +157,12 @@ export const domains = [
                 },
             },
             {
-                name: "CSGO Market Analyzer",
-                image: CSGOMarketAnalyzer,
-                link: "https://github.com/Bsoulmindy/CSGO-Market-Analyzer",
+                name: "Fantastic APP",
+                image: Fantastic,
+                link: "https://app.fantastic.ma/",
                 description: {
-                    en: "A desktop application which analyze Counter-Strike Global Offensive (CSGO) Market, and automate the process of determining profits of this market with effeciency",
-                    fr: "Une application qui analyse le marché de Counter-Strike Global Offensive (CSGO) et automatise le processus de détermination des bénéfices de ce marché avec efficacité.",
+                    en: "A cross-platform app enabling seamless product orders through Quick-Commerce, currently serving customers in Morocco.",
+                    fr: "Une application multiplateforme permettant des commandes de produits fluides via Quick-Commerce, au service actuellement des clients au Maroc.",
                 },
             },
         ],
