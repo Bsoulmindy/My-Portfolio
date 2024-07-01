@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.fab478a2.css",
-    "main.js": "/My-Portfolio/static/js/main.2e0b4fd7.js",
+    "main.js": "/My-Portfolio/static/js/main.f73dd44e.js",
     "static/js/453.a5f36ace.chunk.js": "/My-Portfolio/static/js/453.a5f36ace.chunk.js",
     "static/media/grid.png": "/My-Portfolio/static/media/grid.d8017c4e85926f772602.png",
     "static/media/React.png": "/My-Portfolio/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/qt.png": "/My-Portfolio/static/media/qt.44b6e22405816e264300.png",
     "static/media/Python-logo.png": "/My-Portfolio/static/media/Python-logo.67a96446f70ae7be72e9.png",
     "static/media/App_Development.png": "/My-Portfolio/static/media/App_Development.07efee1f8f5987b04eee.png",
     "static/media/Github.png": "/My-Portfolio/static/media/Github.81bd5c48a521972faba6.png",
     "static/media/Web_Development.png": "/My-Portfolio/static/media/Web_Development.4c6777f1e93a2dab47b5.png",
     "static/media/JavaScript_logo.png": "/My-Portfolio/static/media/JavaScript_logo.bb54340fef3a4c9fbb89.png",
+    "static/media/fantastic.png": "/My-Portfolio/static/media/fantastic.46a20932c1a4dd9eb0fa.png",
     "static/media/Dart_logo.png": "/My-Portfolio/static/media/Dart_logo.a765143fcb43b2136eeb.png",
+    "static/media/revision_assistant_icon.png": "/My-Portfolio/static/media/revision_assistant_icon.0a5728fef52a0733b495.png",
     "static/media/jQuery.png": "/My-Portfolio/static/media/jQuery.7c16ef98ee6e9d838a78.png",
     "static/media/Laravel.png": "/My-Portfolio/static/media/Laravel.8b2939ca7ad8851c40a2.png",
     "static/media/Communication.png": "/My-Portfolio/static/media/Communication.75accbd284f4da86a2cd.png",
@@ -25,11 +28,11 @@
     "index.html": "/My-Portfolio/index.html",
     "static/media/work.svg": "/My-Portfolio/static/media/work.41694c724da31b135ed0e3584094cefe.svg",
     "main.fab478a2.css.map": "/My-Portfolio/static/css/main.fab478a2.css.map",
-    "main.2e0b4fd7.js.map": "/My-Portfolio/static/js/main.2e0b4fd7.js.map",
+    "main.f73dd44e.js.map": "/My-Portfolio/static/js/main.f73dd44e.js.map",
     "453.a5f36ace.chunk.js.map": "/My-Portfolio/static/js/453.a5f36ace.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fab478a2.css",
-    "static/js/main.2e0b4fd7.js"
+    "static/js/main.f73dd44e.js"
   ]
 }
