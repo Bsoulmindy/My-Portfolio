@@ -37,6 +37,10 @@
     margin: 5rem 0;
 }
 
+.profile_description > p {
+    margin: 0 10%;
+}
+
 .profile_resume {
     width: fit-content;
 }

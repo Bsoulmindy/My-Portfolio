@@ -3,7 +3,7 @@ const en = {
     photo_alt: "Oussama Moustadraf's photo",
     speciality: "Software Engineer - Mid-Level",
     description:
-        "Software engineering is not just about instructing machines what to do; it's about understanding their intricacies and resolving their issues with empathy.",
+        "Software engineering is not just about instructing computers what to do; it's about understanding their intricacies and resolving their issues with empathy.",
     title_languages: "My programming languages",
     language: "Language",
     experience: "My experience",

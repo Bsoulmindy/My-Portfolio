@@ -1,9 +1,9 @@
 const en = {
     fullname: "Oussama Moustadraf",
     photo_alt: "Photo d'Oussama Moustadraf",
-    speciality: "Étudiant en ingénierie informatique",
+    speciality: "Ingénieur état en Informatique - Intermédiaire",
     description:
-        "Le génie logiciel ne consiste pas seulement à indiquer aux machines quoi faire ; il s'agit de comprendre leurs subtilités et de résoudre leurs problèmes avec empathie.",
+        "Le génie logiciel ne consiste pas seulement à indiquer aux ordinateurs quoi faire; il s'agit de comprendre leurs subtilités et de résoudre leurs problèmes avec empathie.",
     title_languages: "Mes languages de programmation",
     language: "Language",
     experience: "Ma expérience",
