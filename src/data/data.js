@@ -159,7 +159,7 @@ export const domains = [
             {
                 name: "Fantastic APP",
                 image: Fantastic,
-                link: "https://app.fantastic.ma/",
+                link: "https://play.google.com/store/apps/details?id=client.fantastic.ma&pli=1",
                 description: {
                     en: "A cross-platform app enabling seamless product orders through Quick-Commerce, currently serving customers in Morocco.",
                     fr: "Une application multiplateforme permettant des commandes de produits fluides via Quick-Commerce, au service actuellement des clients au Maroc.",
