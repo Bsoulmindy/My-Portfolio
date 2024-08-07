@@ -4,6 +4,9 @@ import "../styles/SoftSkills.css";
 import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 
+/**
+ * @deprecated since v1.3.0
+ */
 function SoftSkills() {
     const { language } = useContext(LanguageContext);
 
@@ -13,7 +16,7 @@ function SoftSkills() {
             <div className="soft_skills">
                 {soft_skills.map((skill, index) => (
                     <SoftSkill
-                        key={skill.name + "-" + index}
+                        key={skill.name[language] + "-" + index}
                         name={skill.name[language]}
                         icon={skill.icon}
                     />

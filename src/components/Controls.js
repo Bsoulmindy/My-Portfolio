@@ -4,14 +4,12 @@ import { useState } from "react";
 import { ReactComponent as Home } from "../assets/home.svg";
 import { ReactComponent as Code } from "../assets/code.svg";
 import { ReactComponent as Work } from "../assets/work.svg";
-import { ReactComponent as Star } from "../assets/star.svg";
 import smoothscroll from "smoothscroll-polyfill";
 
 function Controls() {
     const [isHomeActive, setHomeActive] = useState(true);
     const [isCodeActive, setCodeActive] = useState(false);
     const [isWorkActive, setWorkActive] = useState(false);
-    const [isStarActive, setStarActive] = useState(false);
 
     // Add the polyfill to the window object for unsupprted browsers (Safari, IE)
     smoothscroll.polyfill();
@@ -26,9 +24,6 @@ function Controls() {
                 break;
             case "work":
                 scrollTo(document.getElementById("domains"));
-                break;
-            case "star":
-                scrollTo(document.getElementById("soft_skills"));
                 break;
         }
     };
@@ -50,9 +45,6 @@ function Controls() {
                     case "domains":
                         setWorkActive(true);
                         break;
-                    case "soft_skills":
-                        setStarActive(true);
-                        break;
                 }
             } else {
                 switch (entry.target.id) {
@@ -65,9 +57,6 @@ function Controls() {
                     case "domains":
                         setWorkActive(false);
                         break;
-                    case "soft_skills":
-                        setStarActive(false);
-                        break;
                 }
             }
         });
@@ -76,7 +65,6 @@ function Controls() {
         observerControls.observe(document.getElementById("profile"));
         observerControls.observe(document.getElementById("languages"));
         observerControls.observe(document.getElementById("domains"));
-        observerControls.observe(document.getElementById("soft_skills"));
     }, 1000);
 
     return (
@@ -95,11 +83,6 @@ function Controls() {
                 isActive={isWorkActive}
                 onClick={() => selectControl("work")}>
                 <Work />
-            </Control>
-            <Control
-                isActive={isStarActive}
-                onClick={() => selectControl("star")}>
-                <Star />
             </Control>
         </div>
     );
