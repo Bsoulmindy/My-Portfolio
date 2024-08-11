@@ -7,16 +7,19 @@ function Languages() {
     const { language } = useContext(LanguageContext);
 
     // Order languages by years
-    const languagesSorted = languages.sort((a, b) => b.years - a.years);
+    const languagesSorted = languages.toSorted((a, b) => b.years - a.years);
 
     const max = languages.reduce((max, language) => {
         return Math.max(max, language.years);
     }, 0);
 
-    const determineColor = (years) => {
-        if (years <= 1) return "var(--progress-beginner)";
-        else if (years <= 3) return "var(--progress-medium)";
-        else return "var(--progress-expert)";
+    const determineColor = (progress) => {
+        const ratio = progress / 100;
+        const red =
+            ratio <= 0.5 ? 255 : Math.floor(255 * (1 - (ratio - 0.5) * 2));
+        const green = ratio <= 0.5 ? Math.floor(200 * (ratio * 2)) : 255;
+        const blue = 0;
+        return `rgb(${red},${green},${blue})`;
     };
 
     const isYearOrYears = (years) => {
@@ -24,10 +27,15 @@ function Languages() {
         else return getData(language).year;
     };
 
-    const style = (language) => ({
-        maxWidth: (language.years / max) * 100 + "%",
-        backgroundColor: determineColor(language.years),
-    });
+    const style = (language) => {
+        const progress = (language.years / max) * 100;
+        let color = determineColor(progress);
+
+        return {
+            maxWidth: (language.years / max) * 100 + "%",
+            backgroundColor: color,
+        };
+    };
 
     return (
         <section className="languages_container" id="languages">
