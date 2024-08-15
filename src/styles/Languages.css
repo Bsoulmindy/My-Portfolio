@@ -20,9 +20,9 @@
 
 .language_progress_container {
     display: flex;
-    height: 1rem;
+    height: 0.6rem;
     overflow: hidden;
-    font-size: .75rem;
+    font-size: 0.75rem;
     background-color: var(--secondary-dark);
     border-radius: 1rem;
     margin: 1rem 0;
@@ -36,7 +36,7 @@
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    transition: width .6s ease;
+    transition: width 0.6s ease;
 }
 
 .language_progress.is-visible {
@@ -44,6 +44,7 @@
     animation-name: progressIn;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
+    animation-fill-mode: "forwards";
 }
 
 .language_years {
@@ -72,7 +73,7 @@
     }
 
     .language_progress_container {
-        margin: .75rem 0;
+        margin: 0.75rem 0;
     }
 
     .language_years {
@@ -101,7 +102,7 @@
     }
 
     .language_progress_container {
-        margin: .5rem 0;
+        margin: 0.5rem 0;
     }
 
     .language_years {
