@@ -48,19 +48,19 @@ export const image = Factory;
 export const languages = [
     {
         name: "JavaScript",
-        years: 1.5,
+        years: 2,
         logo: Javascript,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
         name: "C++",
-        years: 3,
+        years: 3.5,
         logo: Cplusplus,
         link: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
     {
         name: "Java",
-        years: 2,
+        years: 3,
         logo: Java,
         link: "https://en.wikipedia.org/wiki/Java_(programming_language)",
     },
@@ -72,7 +72,7 @@ export const languages = [
     },
     {
         name: "Dart",
-        years: 1,
+        years: 2,
         logo: Dart,
         link: "https://en.wikipedia.org/wiki/Dart_(programming_language)",
     },
