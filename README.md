@@ -22,13 +22,15 @@ Of course you can get inspired by the source code.
 
 # Version history
 
--   `1.2.0`
 
+-   `1.3.0`
+    -   Remove Soft-Skills section
+
+-   `1.2.0`
     -   Added other medias
     -   Updated data (projects, languages...)
 
 -   `1.1.0`
-
     -   Implemented a navbar for scrolling
     -   Added a background image
     -   Created some tests
