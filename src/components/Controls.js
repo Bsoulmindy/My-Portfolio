@@ -23,7 +23,7 @@ function Controls() {
                 scrollTo(document.getElementById("languages"));
                 break;
             case "work":
-                scrollTo(document.getElementById("domains"));
+                scrollTo(document.getElementById("projects"));
                 break;
         }
     };
@@ -42,7 +42,7 @@ function Controls() {
                     case "languages":
                         setCodeActive(true);
                         break;
-                    case "domains":
+                    case "projects":
                         setWorkActive(true);
                         break;
                 }
@@ -54,7 +54,7 @@ function Controls() {
                     case "languages":
                         setCodeActive(false);
                         break;
-                    case "domains":
+                    case "projects":
                         setWorkActive(false);
                         break;
                 }
@@ -64,7 +64,7 @@ function Controls() {
     setTimeout(() => {
         observerControls.observe(document.getElementById("profile"));
         observerControls.observe(document.getElementById("languages"));
-        observerControls.observe(document.getElementById("domains"));
+        observerControls.observe(document.getElementById("projects"));
     }, 1000);
 
     return (

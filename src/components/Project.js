@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 import "../styles/Project.css";
 
-function Project({ index, name, image, link = "#", description = "" }) {
-    const projectCss = "project " + (index === 0 ? "" : "project-top-bordered");
-
+function Project({ name, image, link = "#", description = "" }) {
     const content = (
-        <div className={projectCss}>
+        <div className="project">
             <img className="project_image" src={image} alt={name} />
-            <div className="project_name">{name}</div>
-            <div className="project_description">{description}</div>
+            <div className="project_info">
+                <div className="project_name">{name}</div>
+                <div className="project_description">{description}</div>
+            </div>
         </div>
     );
 
@@ -27,7 +27,6 @@ function Project({ index, name, image, link = "#", description = "" }) {
 }
 
 Project.propTypes = {
-    index: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     link: PropTypes.string,

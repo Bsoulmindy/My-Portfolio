@@ -34,7 +34,7 @@ window.addEventListener(
         }, options);
         await sleep(1000);
         observerFadeIn.observe(document.querySelector(".profile_description"));
-        observerFadeIn.observe(document.querySelector(".domains_container"));
+        observerFadeIn.observe(document.querySelector(".projects_container"));
         observerProgressIn.observe(document.querySelector("#languages_table"));
     },
     false

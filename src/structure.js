@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "./components/Profile";
 import Languages from "./components/Languages";
-import Domains from "./components/Domains";
+import Projects from "./components/Projects";
 import Header from "./components/Header";
 import { LanguageProvider } from "./utils/LanguageContext";
 import { DarkProvider } from "./utils/DarkContext";
@@ -17,7 +17,7 @@ export const structure = (
                 <Header />
                 <Profile />
                 <Languages />
-                <Domains />
+                <Projects />
             </LanguageProvider>
         </DarkProvider>
     </React.StrictMode>

@@ -10,7 +10,7 @@ import Leetcode from "../assets/Leetcode.png";
 import WebDevelopment from "../assets/Web_Development.png";
 import AppDevelopment from "../assets/App_Development.png";
 import Urbit from "../assets/Urbit.png";
-import RegionsMusic from "../assets/regions-music.png";
+import RegionsMusicIcon from "../assets/regions-music.png";
 import Fantastic from "../assets/fantastic.png";
 import RevisionAssistantIcon from "../assets/revision_assistant_icon.png";
 import jQuery from "../assets/jQuery.png";
@@ -28,7 +28,7 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.3.0";
+export const version = "v1.4.0";
 
 export const translations = ["en", "fr"];
 
@@ -149,7 +149,7 @@ export const domains = [
             },
             {
                 name: "Regions Music",
-                image: RegionsMusic,
+                image: RegionsMusicIcon,
                 link: "https://github.com/Bsoulmindy/Regions-Music",
                 description: {
                     en: "An app that plays music according to your location",
@@ -166,6 +166,27 @@ export const domains = [
                 },
             },
         ],
+    },
+];
+
+export const personalProjects = [
+    {
+        name: "Revision Assistant",
+        image: RevisionAssistantIcon,
+        link: "https://revision-assistant.vercel.app/",
+        description: {
+            en: "A cross-platform app that selects random questions and the user should guess the right answer, or vice versa",
+            fr: "Une application multiplateforme qui sélectionne des questions aléatoires et l'utilisateur doit deviner la bonne réponse, ou vice versa",
+        },
+    },
+    {
+        name: "Regions Music",
+        image: RegionsMusicIcon,
+        link: "https://regions-music.optidevnovate.com/",
+        description: {
+            en: "An app that plays music according to your location",
+            fr: "Une application qui joue la musique selon votre position",
+        },
     },
 ];
 
