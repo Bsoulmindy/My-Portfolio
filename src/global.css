@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--background-dark);
+    padding-bottom: 200px;
 }
 
 h1 {

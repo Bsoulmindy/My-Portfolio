@@ -18,6 +18,7 @@ function Projects() {
                         image={project.image}
                         link={project.link}
                         description={project.description[language]}
+                        tickets={project.tickets}
                     />
                 ))}
             </div>

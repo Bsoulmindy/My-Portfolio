@@ -1,9 +1,13 @@
 .project {
+    min-width: 16rem;
+    max-width: 32rem;
+    height: 12rem; /* Max height of all projects */
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
-    align-items: center;
+    gap: 0.25rem;
     border: 1px solid var(--tertiary-dark);
     border-radius: 1rem;
     background-color: color-mix(
@@ -19,9 +23,25 @@
     color: var(--primary-light);
 }
 
+.project_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 2rem;
+}
+
+.project_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .project_image {
-    height: 100px;
-    width: 100px;
+    height: 3rem;
+    width: auto;
 }
 
 .project_info {
@@ -31,8 +51,8 @@
 }
 
 .project_name {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-style: bold;
 }
 
 .project:hover .project_name {
@@ -48,6 +68,18 @@
 
 .project:hover .project_description {
     color: var(--secondary-light);
+}
+
+.project_body {
+    margin: 0 0 auto 0;
+}
+
+.project_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 2rem;
 }
 
 @media all and (max-width: 768px) {
