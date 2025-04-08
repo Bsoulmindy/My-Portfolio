@@ -6,13 +6,13 @@
 
 * {
     color: var(--primary-dark);
-    font-family: "Stratum2", "Courier New", Courier, monospace;
+    font-family: "Stratum2", system-ui, monospace;
     transition: all 0.3s ease-in-out;
 }
 
 body {
     background-color: var(--background-dark);
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 h1 {

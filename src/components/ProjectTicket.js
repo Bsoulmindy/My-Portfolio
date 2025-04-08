@@ -5,8 +5,8 @@ function ProjectTag({ text, backgroundColor, textColor }) {
     return (
         <div
             className="project_ticket"
-            style={{ backgroundColor: backgroundColor, color: textColor }}>
-            <span>{text}</span>
+            style={{ backgroundColor: backgroundColor }}>
+            <span style={{ color: textColor }}>{text}</span>
         </div>
     );
 }
