@@ -12,14 +12,7 @@ function Projects() {
             <h1>{getData(language).projects}</h1>
             <div className="projects_container">
                 {personalProjects.map((project, index) => (
-                    <Project
-                        key={"project-" + index}
-                        name={project.name}
-                        image={project.image}
-                        link={project.link}
-                        description={project.description[language]}
-                        tickets={project.tickets}
-                    />
+                    <Project key={"project-" + index} project={project} />
                 ))}
             </div>
         </section>

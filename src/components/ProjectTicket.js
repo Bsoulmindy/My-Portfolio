@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/ProjectTicket.css";
 
-function ProjectTicket({ text, backgroundColor, textColor }) {
+function ProjectTag({ text, backgroundColor, textColor }) {
     return (
         <div
             className="project_ticket"
@@ -11,10 +11,10 @@ function ProjectTicket({ text, backgroundColor, textColor }) {
     );
 }
 
-ProjectTicket.propTypes = {
+ProjectTag.propTypes = {
     text: PropTypes.string.isRequired,
     backgroundColor: PropTypes.string.isRequired,
     textColor: PropTypes.string.isRequired,
 };
 
-export default ProjectTicket;
+export default ProjectTag;

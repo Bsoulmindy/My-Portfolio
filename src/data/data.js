@@ -178,7 +178,7 @@ export const personalProjects = [
             en: "A cross-platform app that selects random questions and the user should guess the right answer, or vice versa",
             fr: "Une application multiplateforme qui sélectionne des questions aléatoires et l'utilisateur doit deviner la bonne réponse, ou vice versa",
         },
-        tickets: [
+        tags: [
             {
                 text: {
                     en: "App",
@@ -188,6 +188,7 @@ export const personalProjects = [
                 textColor: "white",
             },
         ],
+        platforms: ["Web", "Mobile", "Desktop"],
     },
     {
         name: "Regions Music",
@@ -197,7 +198,7 @@ export const personalProjects = [
             en: "An app that plays music according to your location",
             fr: "Une application qui joue la musique selon votre position",
         },
-        tickets: [
+        tags: [
             {
                 text: {
                     en: "App",
@@ -207,6 +208,7 @@ export const personalProjects = [
                 textColor: "white",
             },
         ],
+        platforms: ["Mobile", "Desktop"],
     },
 ];
 
