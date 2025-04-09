@@ -97,7 +97,6 @@
 
 .project_platforms_section .project_platforms {
     color: var(--primary-dark);
-    font-style: italic;
 }
 
 .project:hover .project_platforms_section .project_platforms {
