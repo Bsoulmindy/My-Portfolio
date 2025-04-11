@@ -1,24 +1,24 @@
-.languages_container {
+.performance-table-entries_container {
     margin: 10rem 0;
 }
 
-.languages_title {
+.performance-table-entries_title {
     font-size: xx-large;
 }
 
-.language_logo {
+.performance-table-entry_logo {
     width: 15rem;
     text-align: center;
     font-size: large;
 }
 
-.language_image {
+.performance-table-entry_image {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
 }
 
-.language_progress_container {
+.performance-table-entry_progress_container {
     display: flex;
     height: 0.6rem;
     overflow: hidden;
@@ -28,7 +28,7 @@
     margin: 1rem 0;
 }
 
-.language_progress {
+.performance-table-entry_progress {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +39,7 @@
     transition: width 0.6s ease;
 }
 
-.language_progress.is-visible {
+.performance-table-entry_progress.is-visible {
     width: 100%;
     animation-name: progressIn;
     animation-duration: 3s;
@@ -47,65 +47,65 @@
     animation-fill-mode: "forwards";
 }
 
-.language_years {
+.performance-table-entry_years {
     width: 15rem;
     text-align: center;
     font-size: large;
 }
 
 @media all and (max-width: 768px) {
-    .languages_title {
+    .performance-table-entries_title {
         font-size: x-large;
     }
 
-    .language_logo {
+    .performance-table-entry_logo {
         width: 10rem;
         font-size: medium;
     }
 
-    .language_image {
+    .performance-table-entry_image {
         width: 2rem;
         height: 2rem;
     }
 
-    .language_progress_container {
+    .performance-table-entry_progress_container {
         height: 1rem;
     }
 
-    .language_progress_container {
+    .performance-table-entry_progress_container {
         margin: 0.75rem 0;
     }
 
-    .language_years {
+    .performance-table-entry_years {
         width: 10rem;
         font-size: medium;
     }
 }
 
 @media all and (max-width: 600px) {
-    .languages_title {
+    .performance-table-entries_title {
         font-size: large;
     }
 
-    .language_logo {
+    .performance-table-entry_logo {
         width: 5rem;
         font-size: small;
     }
 
-    .language_image {
+    .performance-table-entry_image {
         width: 2rem;
         height: 2rem;
     }
 
-    .language_progress_container {
+    .performance-table-entry_progress_container {
         height: 1rem;
     }
 
-    .language_progress_container {
+    .performance-table-entry_progress_container {
         margin: 0.5rem 0;
     }
 
-    .language_years {
+    .performance-table-entry_years {
         width: 5rem;
         font-size: small;
     }

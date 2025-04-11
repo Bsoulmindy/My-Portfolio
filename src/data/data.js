@@ -7,19 +7,8 @@ import Dart from "../assets/Dart_logo.png";
 import Linkedin from "../assets/Linkedin.png";
 import Github from "../assets/Github.png";
 import Leetcode from "../assets/Leetcode.png";
-import WebDevelopment from "../assets/Web_Development.png";
-import AppDevelopment from "../assets/App_Development.png";
-import Urbit from "../assets/Urbit.png";
 import RegionsMusicIcon from "../assets/regions-music.png";
-import Fantastic from "../assets/fantastic.png";
 import RevisionAssistantIcon from "../assets/revision_assistant_icon.png";
-import jQuery from "../assets/jQuery.png";
-import React from "../assets/React.png";
-import Laravel from "../assets/Laravel.png";
-import Spring from "../assets/Spring.png";
-import Flutter from "../assets/Flutter.png";
-import Boost from "../assets/Boost.png";
-import Qt from "../assets/qt.png";
 import Communication from "../assets/Communication.png";
 import ProblemSolving from "../assets/Problem_Solving.png";
 import Teamwork from "../assets/Teamwork.png";
@@ -78,94 +67,50 @@ export const languages = [
     },
 ];
 
-// The names should be unique
 export const domains = [
     {
         name: "Web Development",
-        image: WebDevelopment,
-        frameworks: [
-            {
-                name: "React",
-                image: React,
-                link: "https://reactjs.org/",
-            },
-            {
-                name: "Laravel",
-                image: Laravel,
-                link: "https://laravel.com/",
-            },
-            {
-                name: "Spring",
-                image: Spring,
-                link: "https://spring.io/",
-            },
-            {
-                name: "jQuery",
-                image: jQuery,
-                link: "https://jquery.com/",
-            },
-        ],
-        projects: [
-            {
-                name: "Urbit",
-                image: Urbit,
-                link: "#",
-                description: {
-                    en: "A platform E-Learning for Soft-Skills",
-                    fr: "Une plateforme E-Learning dédiée aux Soft-Skills",
-                },
-            },
-        ],
+        years: 4,
     },
     {
         name: "App Development",
-        image: AppDevelopment,
-        frameworks: [
-            {
-                name: "Flutter",
-                image: Flutter,
-                link: "https://flutter.dev/",
-            },
-            {
-                name: "Boost",
-                image: Boost,
-                link: "https://www.boost.org/",
-            },
-            {
-                name: "Qt",
-                image: Qt,
-                link: "https://www.qt.io/",
-            },
-        ],
-        projects: [
-            {
-                name: "Revision Assistant",
-                image: RevisionAssistantIcon,
-                link: "https://revision-assistant.vercel.app/",
-                description: {
-                    en: "A cross-platform app that selects random questions and the user should guess the right answer, or vice versa",
-                    fr: "Une application multiplateforme qui sélectionne des questions aléatoires et l'utilisateur doit deviner la bonne réponse, ou vice versa",
-                },
-            },
-            {
-                name: "Regions Music",
-                image: RegionsMusicIcon,
-                link: "https://github.com/Bsoulmindy/Regions-Music",
-                description: {
-                    en: "An app that plays music according to your location",
-                    fr: "Une application qui joue la musique selon votre position",
-                },
-            },
-            {
-                name: "Fantastic APP",
-                image: Fantastic,
-                link: "https://play.google.com/store/apps/details?id=client.fantastic.ma&pli=1",
-                description: {
-                    en: "A cross-platform app enabling seamless product orders through Quick-Commerce, currently serving customers in Morocco.",
-                    fr: "Une application multiplateforme permettant des commandes de produits fluides via Quick-Commerce, au service actuellement des clients au Maroc.",
-                },
-            },
-        ],
+        years: 3,
+    },
+    {
+        name: "Competitive Programming",
+        years: 2,
+    },
+    {
+        name: "DevOps",
+        years: 1.5,
+    },
+    {
+        name: "Cybersecurity",
+        years: 0.25,
+    },
+    {
+        name: "Blockchain",
+        years: 0,
+    },
+    {
+        name: "Quality Assurance",
+        years: 1,
+    },
+    {
+        name: "Game Development",
+        years: 0,
+    },
+    {
+        name: "Artifical Intelligence",
+        years: 0,
+    },
+    {
+        name: "Embedded Systems",
+        years: 0,
+    },
+    {
+        name: "Artificial / Virtual Reality",
+        years: 0,
     },
 ];
 

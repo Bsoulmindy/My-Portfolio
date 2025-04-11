@@ -7,6 +7,7 @@ import { LanguageProvider } from "./utils/LanguageContext";
 import { DarkProvider } from "./utils/DarkContext";
 import GlobalStyle from "./styles/GlobalStyle";
 import Controls from "./components/Controls";
+import Domains from "./components/Domains";
 
 export const structure = (
     <React.StrictMode>
@@ -16,6 +17,7 @@ export const structure = (
                 <Controls />
                 <Header />
                 <Profile />
+                <Domains />
                 <Languages />
                 <Projects />
             </LanguageProvider>
