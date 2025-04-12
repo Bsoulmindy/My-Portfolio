@@ -6,6 +6,7 @@ const en = {
         "Le génie logiciel ne consiste pas seulement à indiquer aux ordinateurs quoi faire; il s'agit de comprendre leurs subtilités et de résoudre leurs problèmes avec empathie.",
     title_languages: "Mes languages de programmation",
     language: "Language",
+    domain: "Domaine",
     experience: "Ma expérience",
     years: "ans",
     year: "an",
@@ -16,6 +17,7 @@ const en = {
     soft_skills: "Mes Soft-Skills",
     darkmode: "Sombre",
     lightmode: "Clair",
+    platforms: "🖵 Plateformes",
 };
 
 export default en;

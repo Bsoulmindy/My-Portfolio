@@ -2,12 +2,14 @@ import "../styles/Controls.css";
 import Control from "./Control";
 import { useState } from "react";
 import { ReactComponent as Home } from "../assets/home.svg";
+import { ReactComponent as Domains } from "../assets/domains.svg";
 import { ReactComponent as Code } from "../assets/code.svg";
 import { ReactComponent as Work } from "../assets/work.svg";
 import smoothscroll from "smoothscroll-polyfill";
 
 function Controls() {
     const [isHomeActive, setHomeActive] = useState(true);
+    const [isDomainsActive, setDomainsActive] = useState(false);
     const [isCodeActive, setCodeActive] = useState(false);
     const [isWorkActive, setWorkActive] = useState(false);
 
@@ -19,11 +21,14 @@ function Controls() {
             case "home":
                 scrollTo(document.getElementById("header"));
                 break;
+            case "domains":
+                scrollTo(document.getElementById("domains"));
+                break;
             case "code":
                 scrollTo(document.getElementById("languages"));
                 break;
             case "work":
-                scrollTo(document.getElementById("domains"));
+                scrollTo(document.getElementById("projects"));
                 break;
         }
     };
@@ -39,10 +44,13 @@ function Controls() {
                     case "profile":
                         setHomeActive(true);
                         break;
+                    case "domains":
+                        setDomainsActive(true);
+                        break;
                     case "languages":
                         setCodeActive(true);
                         break;
-                    case "domains":
+                    case "projects":
                         setWorkActive(true);
                         break;
                 }
@@ -51,10 +59,13 @@ function Controls() {
                     case "profile":
                         setHomeActive(false);
                         break;
+                    case "domains":
+                        setDomainsActive(false);
+                        break;
                     case "languages":
                         setCodeActive(false);
                         break;
-                    case "domains":
+                    case "projects":
                         setWorkActive(false);
                         break;
                 }
@@ -63,8 +74,9 @@ function Controls() {
     }, options);
     setTimeout(() => {
         observerControls.observe(document.getElementById("profile"));
-        observerControls.observe(document.getElementById("languages"));
         observerControls.observe(document.getElementById("domains"));
+        observerControls.observe(document.getElementById("languages"));
+        observerControls.observe(document.getElementById("projects"));
     }, 1000);
 
     return (
@@ -73,6 +85,11 @@ function Controls() {
                 isActive={isHomeActive}
                 onClick={() => selectControl("home")}>
                 <Home />
+            </Control>
+            <Control
+                isActive={isDomainsActive}
+                onClick={() => selectControl("domains")}>
+                <Domains />
             </Control>
             <Control
                 isActive={isCodeActive}

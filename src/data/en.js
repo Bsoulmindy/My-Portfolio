@@ -6,6 +6,7 @@ const en = {
         "Software engineering is not just about instructing computers what to do; it's about understanding their intricacies and resolving their issues with empathy.",
     title_languages: "My programming languages",
     language: "Language",
+    domain: "Domain",
     experience: "My experience",
     years: "years",
     year: "year",
@@ -16,6 +17,7 @@ const en = {
     soft_skills: "My Soft-Skills",
     darkmode: "Dark",
     lightmode: "Light",
+    platforms: "🖵 Plateforms",
 };
 
 export default en;

@@ -21,11 +21,15 @@ window.addEventListener(
                     for (
                         let i = 0;
                         i <
-                        document.querySelectorAll(".language_progress").length;
+                        document.querySelectorAll(
+                            ".performance-table-entry_progress"
+                        ).length;
                         i++
                     ) {
                         document
-                            .querySelectorAll(".language_progress")
+                            .querySelectorAll(
+                                ".performance-table-entry_progress"
+                            )
                             // eslint-disable-next-line no-unexpected-multiline
                             [i].classList.add("is-visible");
                     }
@@ -34,8 +38,9 @@ window.addEventListener(
         }, options);
         await sleep(1000);
         observerFadeIn.observe(document.querySelector(".profile_description"));
-        observerFadeIn.observe(document.querySelector(".domains_container"));
+        observerFadeIn.observe(document.querySelector("#projects"));
         observerProgressIn.observe(document.querySelector("#languages_table"));
+        observerProgressIn.observe(document.querySelector("#domains_table"));
     },
     false
 );

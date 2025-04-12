@@ -9,15 +9,18 @@
     justify-content: center;
     margin: 0.7rem 0;
     box-shadow: var(--secondary-light);
+    border: 1px solid var(--secondary-dark);
 }
 
 .control:hover {
     background-color: var(--secondary-dark);
+    border: 1px solid var(--secondary-light);
 }
 
 .control_active {
     background-color: var(--secondary-dark);
-    transition: all .4s ease-in-out;
+    border: 1px solid var(--secondary-light);
+    transition: all 0.4s ease-in-out;
 }
 
 .control svg {
