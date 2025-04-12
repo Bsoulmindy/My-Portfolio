@@ -22,6 +22,10 @@ Of course you can get inspired by the source code.
 
 # Version history
 
+-   `1.4.0`
+    -   Rework of Domains section
+    -   Domains section will show my top 5 most experienced domains
+    -   Rework of Projects section
 
 -   `1.3.0`
     -   Remove Soft-Skills section
