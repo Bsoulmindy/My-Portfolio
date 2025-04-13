@@ -85,14 +85,22 @@
     font-size: 1rem;
 }
 
-.project_platforms_section .project_platforms_text {
+.project_platforms_section .project_platforms_text,
+.project_platforms_section .project_platforms_text_icon {
     color: var(--secondary-dark);
+    fill: var(--secondary-dark);
     font-weight: bold;
     text-wrap: nowrap;
 }
 
-.project:hover .project_platforms_section .project_platforms_text {
+.project_platforms_text_icon {
+    margin: 0 0.25rem;
+}
+
+.project:hover .project_platforms_section .project_platforms_text,
+.project:hover .project_platforms_section .project_platforms_text_icon {
     color: var(--secondary-light);
+    fill: var(--secondary-light);
 }
 
 .project_platforms_section .project_platforms {

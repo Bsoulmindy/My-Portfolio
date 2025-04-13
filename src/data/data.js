@@ -17,7 +17,7 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.4.0";
+export const version = "v1.4.1";
 
 export const translations = ["en", "fr"];
 
