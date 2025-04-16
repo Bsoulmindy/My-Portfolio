@@ -61,7 +61,7 @@ const PerformanceTable = ({ data, headers, id }) => {
                                 <a
                                     href={entry.link}
                                     target="_blank"
-                                    rel="noreferrer">
+                                    rel="noopener noreferrer">
                                     <img
                                         className="performance-table-entry_image"
                                         src={entry.logo}

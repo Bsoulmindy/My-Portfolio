@@ -86,7 +86,6 @@
     color: var(--secondary-dark);
     fill: var(--secondary-dark);
     font-weight: bold;
-    text-wrap: nowrap;
 }
 
 .project_platforms_text_icon {
