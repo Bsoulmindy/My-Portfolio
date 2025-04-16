@@ -36,31 +36,46 @@ export const image = Factory;
 
 export const languages = [
     {
-        name: "JavaScript",
+        name: {
+            en: "JavaScript",
+            fr: "JavaScript",
+        },
         years: 2,
         logo: Javascript,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
-        name: "C++",
+        name: {
+            en: "C++",
+            fr: "C++",
+        },
         years: 3.5,
         logo: Cplusplus,
         link: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
     {
-        name: "Java",
+        name: {
+            en: "Java",
+            fr: "Java",
+        },
         years: 3,
         logo: Java,
         link: "https://en.wikipedia.org/wiki/Java_(programming_language)",
     },
     {
-        name: "Python",
+        name: {
+            en: "Python",
+            fr: "Python",
+        },
         years: 1,
         logo: Python,
         link: "https://en.wikipedia.org/wiki/Python_(programming_language)",
     },
     {
-        name: "Dart",
+        name: {
+            en: "Dart",
+            fr: "Dart",
+        },
         years: 2,
         logo: Dart,
         link: "https://en.wikipedia.org/wiki/Dart_(programming_language)",
@@ -69,47 +84,80 @@ export const languages = [
 
 export const domains = [
     {
-        name: "Web Development",
+        name: {
+            en: "Web Development",
+            fr: "Dévelopment Web",
+        },
         years: 4,
     },
     {
-        name: "App Development",
+        name: {
+            en: "App Development",
+            fr: "Dévelopment App",
+        },
         years: 3,
     },
     {
-        name: "Competitive Programming",
+        name: {
+            en: "Competitive Programming",
+            fr: "Programmation Compétitive",
+        },
         years: 2,
     },
     {
-        name: "DevOps",
+        name: {
+            en: "DevOps",
+            fr: "DevOps",
+        },
         years: 1.5,
     },
     {
-        name: "Cybersecurity",
+        name: {
+            en: "Cybersecurity",
+            fr: "Cybersécurité",
+        },
         years: 0.25,
     },
     {
-        name: "Blockchain",
+        name: {
+            en: "Blockchain",
+            fr: "Blockchain",
+        },
         years: 0,
     },
     {
-        name: "Quality Assurance",
+        name: {
+            en: "Quality Assurance",
+            fr: "Qualité Assurance",
+        },
         years: 1,
     },
     {
-        name: "Game Development",
+        name: {
+            en: "Game Development",
+            fr: "Dévelopment Games",
+        },
         years: 0,
     },
     {
-        name: "Artifical Intelligence",
+        name: {
+            en: "Artifical Intelligence",
+            fr: "Intelligence Artificielle",
+        },
         years: 0,
     },
     {
-        name: "Embedded Systems",
+        name: {
+            en: "Embedded Systems",
+            fr: "Systèmes Embarquées",
+        },
         years: 0,
     },
     {
-        name: "Artificial / Virtual Reality",
+        name: {
+            en: "Artificial / Virtual Reality",
+            fr: "Réalité Artificielle / Virtuelle",
+        },
         years: 0,
     },
 ];
@@ -129,7 +177,7 @@ export const personalProjects = [
                     en: "App",
                     fr: "App",
                 },
-                backgroundColor: "green",
+                backgroundColor: "#006600",
                 textColor: "white",
             },
         ],
@@ -149,7 +197,7 @@ export const personalProjects = [
                     en: "App",
                     fr: "App",
                 },
-                backgroundColor: "green",
+                backgroundColor: "#006600",
                 textColor: "white",
             },
         ],
