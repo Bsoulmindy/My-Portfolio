@@ -47,7 +47,7 @@ const PerformanceTable = ({ data, headers, id }) => {
             <thead>
                 <tr className="performance-table-entries_title">
                     {headers.map((header, index) => (
-                        <th key={index}>{header}</th>
+                        <th key={header + index}>{header}</th>
                     ))}
                 </tr>
             </thead>
@@ -55,24 +55,24 @@ const PerformanceTable = ({ data, headers, id }) => {
                 {dataSorted.map((entry) => (
                     <tr
                         className="performance-table-entries_stat"
-                        key={"performance-table-entries_" + entry.name}>
+                        key={"performance-table-entries_" + entry.name["en"]}>
                         <td className="performance-table-entry_logo">
                             {isLink(entry.link) ? (
                                 <a
                                     href={entry.link}
                                     target="_blank"
-                                    rel="noreferrer">
+                                    rel="noopener noreferrer">
                                     <img
                                         className="performance-table-entry_image"
                                         src={entry.logo}
-                                        alt={entry.name}
+                                        alt={entry.name[language]}
                                     />
                                 </a>
                             ) : (
                                 <img
                                     className="performance-table-entry_image"
                                     src={entry.logo}
-                                    alt={entry.name}
+                                    alt={entry.name[language]}
                                 />
                             )}
                         </td>

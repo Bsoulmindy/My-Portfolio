@@ -4,6 +4,7 @@ import ProjectTag from "./ProjectTicket";
 import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 import { getData } from "../data/data";
+import { ReactComponent as Screen } from "../assets/screen.svg";
 
 function Project({ project }) {
     const { language } = useContext(LanguageContext);
@@ -35,6 +36,7 @@ function Project({ project }) {
                 </div>
             </div>
             <div className="project_platforms_section">
+                <Screen className="project_platforms_text_icon" />
                 <span className="project_platforms_text">
                     {getData(language).platforms} :{" "}
                 </span>

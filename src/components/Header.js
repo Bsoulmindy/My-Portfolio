@@ -21,6 +21,7 @@ function Header() {
             <div className="select_language">
                 <img
                     src={page_language}
+                    alt="language_icon"
                     className={
                         "language_icon " +
                         (mode === "dark" ? "image-white" : "image-dark")
@@ -29,6 +30,7 @@ function Header() {
                 <select
                     id="selector_language"
                     className="page_language"
+                    title={language}
                     defaultValue={language}
                     onChange={changeLanguage}>
                     {translations.map((translation) => (

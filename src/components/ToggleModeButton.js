@@ -6,6 +6,7 @@ function ToggleModeButton() {
 
     return (
         <button
+            title="Toggle Theme"
             className={
                 "toggle_button " +
                 (mode === "dark" ? "dark_mode" : "light_mode")

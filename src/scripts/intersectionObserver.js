@@ -1,12 +1,12 @@
 window.addEventListener(
     "load",
     async function () {
-        var options = {
+        const options = {
             threshold: 0.5,
         };
-        var isTableShown = false;
+        let isTableShown = false;
 
-        var observerFadeIn = new IntersectionObserver(function (entries) {
+        const observerFadeIn = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("is-visible");
@@ -14,7 +14,7 @@ window.addEventListener(
             });
         }, options);
         //Observer of the progress bar of languages
-        var observerProgressIn = new IntersectionObserver(function (entries) {
+        const observerProgressIn = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting && !isTableShown) {
                     isTableShown = true;
