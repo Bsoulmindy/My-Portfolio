@@ -8,7 +8,11 @@
     gap: 0.25rem;
     border: 1px solid var(--tertiary-dark);
     border-radius: 1rem;
-    backdrop-filter: blur(4px);
+    background-color: color-mix(
+        in srgb,
+        var(--background-dark) 50%,
+        transparent
+    );
 }
 
 .project:hover {
