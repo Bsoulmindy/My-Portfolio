@@ -34,7 +34,7 @@ a {
 
 .domains_container:not(.is-visible),
 .profile_description:not(.is-visible),
-.soft_skills:not(.is-visible) {
+#projects:not(.is-visible) {
     opacity: 0;
     transform: translateY(20px);
 }
