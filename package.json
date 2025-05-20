@@ -1,6 +1,6 @@
 {
     "name": "my-cv",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "private": true,
     "dependencies": {
         "@babel/eslint-parser": "^7.18.2",

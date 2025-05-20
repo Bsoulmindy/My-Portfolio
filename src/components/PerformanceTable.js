@@ -62,18 +62,10 @@ const PerformanceTable = ({ data, headers, id }) => {
                                     href={entry.link}
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    <img
-                                        className="performance-table-entry_image"
-                                        src={entry.logo}
-                                        alt={entry.name[language]}
-                                    />
+                                    <PerformanceTableName entry={entry} />
                                 </a>
                             ) : (
-                                <img
-                                    className="performance-table-entry_image"
-                                    src={entry.logo}
-                                    alt={entry.name[language]}
-                                />
+                                <PerformanceTableName entry={entry} />
                             )}
                         </td>
                         <td>
@@ -90,6 +82,26 @@ const PerformanceTable = ({ data, headers, id }) => {
                 ))}
             </tbody>
         </table>
+    );
+};
+
+const PerformanceTableName = ({ entry }) => {
+    const { language } = useContext(LanguageContext);
+
+    if (!entry.logo) {
+        return (
+            <span className="performance-table-entry_name">
+                {entry.name[language]}
+            </span>
+        );
+    }
+
+    return (
+        <img
+            className="performance-table-entry_image"
+            src={entry.logo}
+            alt={entry.name[language]}
+        />
     );
 };
 
