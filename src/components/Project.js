@@ -38,7 +38,7 @@ function Project({ project }) {
             <div className="project_platforms_section">
                 <Screen className="project_platforms_text_icon" />
                 <span className="project_platforms_text">
-                    {getData(language).platforms} :{" "}
+                    {getData(language).platforms}:
                 </span>
                 <span className="project_platforms">
                     {project.platforms.join(", ")}

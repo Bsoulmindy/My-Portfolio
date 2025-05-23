@@ -92,6 +92,10 @@
     font-weight: bold;
 }
 
+.project_platforms_section .project_platforms_text {
+    margin: 0 8px;
+}
+
 .project_platforms_text_icon {
     margin: 0 0.25rem;
 }

@@ -15,7 +15,7 @@ function Domains() {
 
     return (
         <section className="performance-table-entries_container" id="domains">
-            <h1>{getData(language).title_domains}</h1>
+            <h2>{getData(language).title_domains}</h2>
             <PerformanceTable
                 data={domains}
                 headers={headers}

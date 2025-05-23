@@ -6,7 +6,7 @@
 
 * {
     color: var(--primary-dark);
-    font-family: "Stratum2", system-ui, monospace;
+    font-family: system-ui, monospace;
     transition: all 0.3s ease-in-out;
 }
 
@@ -15,8 +15,8 @@ body {
     padding-bottom: 100px;
 }
 
-h1 {
-    font-size: 4rem;
+h2 {
+    font-size: 3rem;
     text-align: center;
     margin: 10rem 0 2rem 0;
 }
@@ -50,14 +50,14 @@ a {
 }
 
 @media all and (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
+    h2 {
+        font-size: 2.25rem;
     }
 }
 
 @media all and (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
+    h2 {
+        font-size: 1.75rem;
     }
 }
 

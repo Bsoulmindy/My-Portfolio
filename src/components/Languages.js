@@ -15,7 +15,7 @@ function Languages() {
 
     return (
         <section className="performance-table-entries_container" id="languages">
-            <h1>{getData(language).title_languages}</h1>
+            <h2>{getData(language).title_languages}</h2>
             <PerformanceTable
                 data={languages}
                 headers={headers}

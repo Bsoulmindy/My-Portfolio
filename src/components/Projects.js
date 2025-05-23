@@ -9,7 +9,7 @@ function Projects() {
 
     return (
         <section id="projects">
-            <h1>{getData(language).projects}</h1>
+            <h2>{getData(language).projects}</h2>
             <div className="projects_container">
                 {personalProjects.map((project, index) => (
                     <Project key={"project-" + index} project={project} />

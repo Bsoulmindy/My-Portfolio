@@ -40,7 +40,7 @@ function OldDomains() {
 
     return (
         <section id="domains">
-            <h1>{getData(language).title_domains}</h1>
+            <h2>{getData(language).title_domains}</h2>
             <div className="domains_container">
                 {domains.map((domain, index) => (
                     <Domain

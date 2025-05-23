@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 import "../styles/DomainInfos.css";
 import Framework from "./Framework";
 import Project from "./Project";
-import React from "react";
-import { useContext } from "react";
+import { React, useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 
 function DomainInfos({ domainSelected }) {
@@ -26,11 +25,11 @@ function DomainInfos({ domainSelected }) {
                 className="domain_info_container domain_fadeIn">
                 {isFrameworksExist && (
                     <React.Fragment>
-                        <h1>{getData(language).frameworks}</h1>
+                        <h2>{getData(language).frameworks}</h2>
                         <div className="domain_frameworks">
                             {domain.frameworks.map((framework) => (
                                 <Framework
-                                    key={domain.name + "-" + framework.name}
+                                    key={domain.name.en + "-" + framework.name}
                                     name={framework.name}
                                     image={framework.image}
                                     link={framework.link}
@@ -41,11 +40,11 @@ function DomainInfos({ domainSelected }) {
                 )}
                 {isProjectsExist && (
                     <React.Fragment>
-                        <h1>{getData(language).projects}</h1>
+                        <h2>{getData(language).projects}</h2>
                         <div>
                             {domain.projects.map((project, index) => (
                                 <Project
-                                    key={domain.name + "-" + project.name}
+                                    key={domain.name.en + "-" + project.name}
                                     index={index}
                                     name={project.name}
                                     image={project.image}
