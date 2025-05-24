@@ -12,7 +12,7 @@ function SoftSkills() {
 
     return (
         <section className="soft_skills_container" id="soft_skills">
-            <h1>{getData(language).soft_skills}</h1>
+            <h2>{getData(language).soft_skills}</h2>
             <div className="soft_skills">
                 {soft_skills.map((skill, index) => (
                     <SoftSkill

@@ -12,7 +12,7 @@
     border-radius: 1%;
 }
 
-.domain_info_container>h1:first-child {
+.domain_info_container > h2:first-child {
     margin: 2rem 0;
 }
 
