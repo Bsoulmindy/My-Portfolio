@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./global.css";
 import reportWebVitals from "./reportWebVitals";
 import "./scripts/intersectionObserver";
-import { structure } from "./structure";
+import { structure } from "./structure.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(structure);

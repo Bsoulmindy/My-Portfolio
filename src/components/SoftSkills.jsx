@@ -1,8 +1,8 @@
 import { getData, soft_skills } from "../data/data.js";
-import SoftSkill from "./SoftSkill.js";
+import SoftSkill from "./SoftSkill.jsx";
 import "../styles/SoftSkills.css";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext";
+import { LanguageContext } from "../utils/LanguageContext.jsx";
 
 /**
  * @deprecated since v1.3.0
