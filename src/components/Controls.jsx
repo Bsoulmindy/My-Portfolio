@@ -1,10 +1,10 @@
 import "../styles/Controls.css";
 import Control from "./Control";
 import { useState } from "react";
-import { ReactComponent as Home } from "../assets/home.svg";
-import { ReactComponent as Domains } from "../assets/domains.svg";
-import { ReactComponent as Code } from "../assets/code.svg";
-import { ReactComponent as Work } from "../assets/work.svg";
+import Home from "../assets/home.svg?react";
+import Domains from "../assets/domains.svg?react";
+import Code from "../assets/code.svg?react";
+import Work from "../assets/work.svg?react";
 import smoothscroll from "smoothscroll-polyfill";
 
 function Controls() {
