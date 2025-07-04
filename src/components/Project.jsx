@@ -4,7 +4,7 @@ import ProjectTag from "./ProjectTicket";
 import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 import { getData } from "../data/data";
-import { ReactComponent as Screen } from "../assets/screen.svg";
+import Screen from "../assets/screen.svg?react";
 
 function Project({ project }) {
     const { language } = useContext(LanguageContext);
