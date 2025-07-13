@@ -166,7 +166,7 @@ export const personalProjects = [
     {
         name: "Revision Assistant",
         image: RevisionAssistantIcon,
-        link: "https://revision-assistant.vercel.app/",
+        link: "https://revision-assistant.optidevnovate.com/",
         description: {
             en: "A cross-platform app that selects random questions and the user should guess the right answer, or vice versa",
             fr: "Une application multiplateforme qui sélectionne des questions aléatoires et l'utilisateur doit deviner la bonne réponse, ou vice versa",
