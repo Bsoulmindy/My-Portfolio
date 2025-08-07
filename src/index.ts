@@ -2,10 +2,15 @@ import ReactDOM from "react-dom/client";
 import "./global.css";
 import reportWebVitals from "./reportWebVitals";
 import "./scripts/intersectionObserver";
-import { structure } from "./structure.jsx";
+import { structure } from "./structure";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(structure);
+const elem = document.getElementById("root");
+if (elem) {
+    const root = ReactDOM.createRoot(elem);
+    root.render(structure);
+} else {
+    console.error("Failed to start React! Element with ID [root] not found!");
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

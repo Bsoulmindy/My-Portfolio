@@ -2,7 +2,7 @@
 import "../styles/PerformanceTable.css";
 import { getData } from "../data/data.js";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext.jsx";
+import { LanguageContext } from "../utils/LanguageContext.js";
 
 const PerformanceTable = ({ data, headers, id }) => {
     const { language } = useContext(LanguageContext);
