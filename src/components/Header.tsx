@@ -11,9 +11,11 @@ function Header() {
     const { mode, toggleMode } = useContext(DarkContext);
 
     const changeLanguage = () => {
-        const selector = document.getElementById("selector_language");
-        const language = selector.options[selector.selectedIndex].value;
-        selectLanguage(language);
+        const selector = document.getElementById(
+            "selector_language"
+        ) as HTMLSelectElement | null;
+        const language = selector?.options[selector.selectedIndex].value;
+        selectLanguage(language ?? "en");
     };
 
     return (

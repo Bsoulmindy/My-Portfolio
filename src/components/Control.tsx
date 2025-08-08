@@ -1,7 +1,7 @@
-import propTypes from "prop-types";
+import { ReactNode } from "react";
 import "../styles/Control.css";
 
-function Control({ isActive, children, onClick }) {
+function Control({ isActive, children, onClick }: Readonly<ControlProps>) {
     return (
         <div
             className={"control" + (isActive ? " control_active" : "")}
@@ -12,10 +12,10 @@ function Control({ isActive, children, onClick }) {
     );
 }
 
-Control.propTypes = {
-    children: propTypes.node.isRequired,
-    isActive: propTypes.bool.isRequired,
-    onClick: propTypes.func.isRequired,
+type ControlProps = {
+    isActive: boolean;
+    children: ReactNode;
+    onClick: () => void;
 };
 
 export default Control;

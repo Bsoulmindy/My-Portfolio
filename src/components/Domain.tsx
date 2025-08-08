@@ -1,8 +1,13 @@
-import PropTypes from "prop-types";
 import React from "react";
 import "../styles/Domain.css";
 
-function Domain({ index, name, image, selected, onClick }) {
+function Domain({
+    index,
+    name,
+    image,
+    selected,
+    onClick,
+}: Readonly<DomainProps>) {
     const content = (
         <React.Fragment>
             <img src={image} alt={name} height="169" width="256" />
@@ -35,12 +40,12 @@ function Domain({ index, name, image, selected, onClick }) {
     );
 }
 
-Domain.propTypes = {
-    index: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    selected: PropTypes.bool.isRequired,
-    onClick: PropTypes.func.isRequired,
+type DomainProps = {
+    index: string;
+    name: string;
+    image: string;
+    selected: boolean;
+    onClick: () => void;
 };
 
 export default Domain;
