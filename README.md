@@ -22,19 +22,19 @@ Of course you can get inspired by the source code.
 
 # Version history
 
--   `1.4.0`
+-   `1.4.x`
     -   Rework of Domains section
     -   Domains section will show my top 5 most experienced domains
     -   Rework of Projects section
 
--   `1.3.0`
+-   `1.3.x`
     -   Remove Soft-Skills section
 
--   `1.2.0`
+-   `1.2.x`
     -   Added other medias
     -   Updated data (projects, languages...)
 
--   `1.1.0`
+-   `1.1.x`
     -   Implemented a navbar for scrolling
     -   Added a background image
     -   Created some tests
@@ -42,7 +42,7 @@ Of course you can get inspired by the source code.
         -   Rendering the application
     -   Minor changes
 
--   `1.0.0`
+-   `1.0.x`
     -   Project Initial
 
 # License

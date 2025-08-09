@@ -4,11 +4,11 @@ import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 import ToggleModeButton from "./ToggleModeButton";
 import { DarkContext } from "../utils/DarkContext";
-import { getData, translations, version } from "../data/data";
+import { translations, version } from "../data/data";
 
 function Header() {
     const { language, selectLanguage } = useContext(LanguageContext);
-    const { mode, toggleMode } = useContext(DarkContext);
+    const { mode } = useContext(DarkContext);
 
     const changeLanguage = () => {
         const selector = document.getElementById(
@@ -42,13 +42,8 @@ function Header() {
                     ))}
                 </select>
             </div>
-            <div className="toggle_mode" onClick={toggleMode}>
+            <div className="toggle_mode">
                 <ToggleModeButton />
-                <div className="toggle_mode_text">
-                    {mode === "dark"
-                        ? getData(language).darkmode
-                        : getData(language).lightmode}
-                </div>
             </div>
             <div className="version">{version}</div>
         </header>

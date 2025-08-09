@@ -3,12 +3,12 @@ import "../styles/Control.css";
 
 function Control({ isActive, children, onClick }: Readonly<ControlProps>) {
     return (
-        <div
+        <button
             className={"control" + (isActive ? " control_active" : "")}
             onClick={onClick}
             data-testid="control0">
             {children}
-        </div>
+        </button>
     );
 }
 

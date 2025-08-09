@@ -73,7 +73,7 @@ function Controls() {
         });
     }, options);
     setTimeout(() => {
-        for (let elemId in ["profile", "domains", "languages", "projects"]) {
+        for (let elemId of ["profile", "domains", "languages", "projects"]) {
             const elem = document.getElementById(elemId);
             if (elem) {
                 observerControls.observe(elem);

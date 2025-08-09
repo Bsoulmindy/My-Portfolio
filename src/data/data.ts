@@ -21,7 +21,7 @@ export const version = "v1.4.4";
 
 export const translations = ["en", "fr"];
 
-export function getData(lang) {
+export function getData(lang: string) {
     switch (lang) {
         case "en":
             return en;
