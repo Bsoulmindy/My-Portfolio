@@ -2,7 +2,11 @@
 import { render } from "@testing-library/react";
 import { structure } from "../structure";
 
+// Mock IntersectionObserver
 global.IntersectionObserver = class IntersectionObserver {
+    root: Element | null = null;
+    rootMargin: string = "";
+    thresholds: ReadonlyArray<number> = [];
     disconnect() {
         return null;
     }
@@ -10,7 +14,7 @@ global.IntersectionObserver = class IntersectionObserver {
         return null;
     }
     takeRecords() {
-        return null;
+        return [];
     }
     unobserve() {
         return null;
