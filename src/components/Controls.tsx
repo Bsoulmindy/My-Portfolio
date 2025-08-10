@@ -8,15 +8,15 @@ import Work from "../assets/work.svg?react";
 import smoothscroll from "smoothscroll-polyfill";
 
 function Controls() {
-    const [isHomeActive, setHomeActive] = useState(true);
-    const [isDomainsActive, setDomainsActive] = useState(false);
-    const [isCodeActive, setCodeActive] = useState(false);
-    const [isWorkActive, setWorkActive] = useState(false);
+    const [isHomeActive, setIsHomeActive] = useState(true);
+    const [isDomainsActive, setIsDomainsActive] = useState(false);
+    const [isCodeActive, setIsCodeActive] = useState(false);
+    const [isWorkActive, setIsWorkActive] = useState(false);
 
     // Add the polyfill to the window object for unsupprted browsers (Safari, IE)
     smoothscroll.polyfill();
 
-    const selectControl = (control) => {
+    const selectControl = (control: string) => {
         switch (control) {
             case "home":
                 scrollTo(document.getElementById("header"));
@@ -33,50 +33,52 @@ function Controls() {
         }
     };
 
-    var options = {
+    const options = {
         threshold: 0.2,
     };
 
-    var observerControls = new IntersectionObserver(function (entries) {
+    const observerControls = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 switch (entry.target.id) {
                     case "profile":
-                        setHomeActive(true);
+                        setIsHomeActive(true);
                         break;
                     case "domains":
-                        setDomainsActive(true);
+                        setIsDomainsActive(true);
                         break;
                     case "languages":
-                        setCodeActive(true);
+                        setIsCodeActive(true);
                         break;
                     case "projects":
-                        setWorkActive(true);
+                        setIsWorkActive(true);
                         break;
                 }
             } else {
                 switch (entry.target.id) {
                     case "profile":
-                        setHomeActive(false);
+                        setIsHomeActive(false);
                         break;
                     case "domains":
-                        setDomainsActive(false);
+                        setIsDomainsActive(false);
                         break;
                     case "languages":
-                        setCodeActive(false);
+                        setIsCodeActive(false);
                         break;
                     case "projects":
-                        setWorkActive(false);
+                        setIsWorkActive(false);
                         break;
                 }
             }
         });
     }, options);
     setTimeout(() => {
-        observerControls.observe(document.getElementById("profile"));
-        observerControls.observe(document.getElementById("domains"));
-        observerControls.observe(document.getElementById("languages"));
-        observerControls.observe(document.getElementById("projects"));
+        for (let elemId of ["profile", "domains", "languages", "projects"]) {
+            const elem = document.getElementById(elemId);
+            if (elem) {
+                observerControls.observe(elem);
+            }
+        }
     }, 1000);
 
     return (
@@ -107,9 +109,9 @@ function Controls() {
 
 export default Controls;
 
-function scrollTo(obj) {
-    var curtop = 0;
-    if (obj.offsetParent) {
+function scrollTo(obj: HTMLElement | null) {
+    let curtop = 0;
+    if (obj?.offsetParent) {
         do {
             curtop += obj.offsetTop;
         } while (obj == obj.offsetParent);

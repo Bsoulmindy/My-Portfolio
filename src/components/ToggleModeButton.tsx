@@ -1,8 +1,11 @@
 import { useContext } from "react";
 import { DarkContext } from "../utils/DarkContext";
+import { getData } from "../data/data";
+import { LanguageContext } from "../utils/LanguageContext";
 
 function ToggleModeButton() {
-    const { mode } = useContext(DarkContext);
+    const { language } = useContext(LanguageContext);
+    const { mode, toggleMode } = useContext(DarkContext);
 
     return (
         <button
@@ -10,7 +13,8 @@ function ToggleModeButton() {
             className={
                 "toggle_button " +
                 (mode === "dark" ? "dark_mode" : "light_mode")
-            }>
+            }
+            onClick={toggleMode}>
             <svg
                 className="toggle_image"
                 id="icon"
@@ -22,6 +26,11 @@ function ToggleModeButton() {
                     <path d="M50,25 C50,25 50,75 50,75 C36,75 25,64 25,50 C25,36 36,25 50,25 Z"></path>
                 </g>
             </svg>
+            <div className="toggle_mode_text">
+                {mode === "dark"
+                    ? getData(language).darkmode
+                    : getData(language).lightmode}
+            </div>
         </button>
     );
 }

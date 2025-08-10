@@ -3,13 +3,13 @@
     flex-direction: row-reverse;
 }
 
-.header>.select_language {
+.header > .select_language {
     border: 1px solid var(--primary-dark);
     display: flex;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.header>.select_language:hover {
+.header > .select_language:hover {
     box-shadow: 0 0 5rem var(--primary-dark);
 }
 
@@ -32,18 +32,18 @@
     height: 16px;
     width: 16px;
     align-self: center;
+    margin: 0 5px 0 1px;
 }
 
 .toggle_button {
     background-color: inherit;
     border: 0px;
-    margin: 0 5px 0 1px;
     display: flex;
     cursor: pointer;
 }
 
 .toggle_button.dark_mode {
-    fill: #FFF;
+    fill: #fff;
 }
 
 .toggle_mode:hover {

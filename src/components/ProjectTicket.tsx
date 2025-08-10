@@ -1,7 +1,10 @@
-import PropTypes from "prop-types";
 import "../styles/ProjectTicket.css";
 
-function ProjectTag({ text, backgroundColor, textColor }) {
+function ProjectTag({
+    text,
+    backgroundColor,
+    textColor,
+}: Readonly<ProjectTagProps>) {
     return (
         <div
             className="project_ticket"
@@ -11,10 +14,10 @@ function ProjectTag({ text, backgroundColor, textColor }) {
     );
 }
 
-ProjectTag.propTypes = {
-    text: PropTypes.string.isRequired,
-    backgroundColor: PropTypes.string.isRequired,
-    textColor: PropTypes.string.isRequired,
+type ProjectTagProps = {
+    text: string;
+    backgroundColor: string;
+    textColor: string;
 };
 
 export default ProjectTag;

@@ -6,7 +6,7 @@ import { LanguageContext } from "../utils/LanguageContext";
 import { getData } from "../data/data";
 import Screen from "../assets/screen.svg?react";
 
-function Project({ project }) {
+function Project({ project }: Readonly<{ project: ProjectProps }>) {
     const { language } = useContext(LanguageContext);
 
     const content = (
@@ -15,7 +15,7 @@ function Project({ project }) {
                 {project.tags.map((tag, index) => (
                     <ProjectTag
                         key={"project-ticket-" + index}
-                        text={tag.text[language]}
+                        text={tag.text[language as "en" | "fr"]}
                         backgroundColor={tag.backgroundColor}
                         textColor={tag.textColor}
                     />
@@ -32,7 +32,7 @@ function Project({ project }) {
 
             <div className="project_body">
                 <div className="project_description">
-                    {project.description[language]}
+                    {project.description[language as "en" | "fr"]}
                 </div>
             </div>
             <div className="project_platforms_section">
@@ -60,5 +60,24 @@ function Project({ project }) {
         </a>
     );
 }
+
+type ProjectProps = {
+    name: string;
+    image: string;
+    link: string;
+    description: {
+        en: string;
+        fr: string;
+    };
+    tags: {
+        text: {
+            en: string;
+            fr: string;
+        };
+        backgroundColor: string;
+        textColor: string;
+    }[];
+    platforms: string[];
+};
 
 export default Project;
