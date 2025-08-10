@@ -21,11 +21,15 @@
 }
 
 .header .page_language {
-    background-color: inherit;
+    background-color: var(--background-dark);
     height: 35px;
     width: 60px;
     border: 0px;
     cursor: pointer;
+}
+
+.header .page_language option {
+    background-color: inherit;
 }
 
 .toggle_image {
@@ -36,7 +40,7 @@
 }
 
 .toggle_button {
-    background-color: inherit;
+    background-color: var(--background-dark);
     border: 0px;
     display: flex;
     cursor: pointer;
