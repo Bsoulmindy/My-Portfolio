@@ -4,7 +4,7 @@ The objective of this project is to create my portfolio website, which it intera
 
 # About master branch
 
-This branch shows the source code which is used in my [portfolio](https://bsoulmindy.github.io/My-Portfolio/).
+This branch shows the source code which is used in my [portfolio](https://bsoulmindy.optidevnovate.com/).
 
 Of course you can get inspired by the source code.
 
