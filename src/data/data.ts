@@ -17,11 +17,11 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.4.3";
+export const version = "v1.4.4";
 
 export const translations = ["en", "fr"];
 
-export function getData(lang) {
+export function getData(lang: string) {
     switch (lang) {
         case "en":
             return en;

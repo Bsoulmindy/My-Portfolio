@@ -2,9 +2,9 @@
 import "../styles/PerformanceTable.css";
 import { getData } from "../data/data.js";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext.jsx";
+import { LanguageContext } from "../utils/LanguageContext.js";
 
-const PerformanceTable = ({ data, headers, id }) => {
+const PerformanceTable = ({ data, headers, id }: PerformanceTableProps) => {
     const { language } = useContext(LanguageContext);
 
     // Order languages by years
@@ -14,7 +14,7 @@ const PerformanceTable = ({ data, headers, id }) => {
         return Math.max(max, language.years);
     }, 0);
 
-    const determineColor = (progress) => {
+    const determineColor = (progress: number) => {
         const ratio = progress / 100;
         const red =
             ratio <= 0.5 ? 255 : Math.floor(255 * (1 - (ratio - 0.5) * 2));
@@ -23,12 +23,12 @@ const PerformanceTable = ({ data, headers, id }) => {
         return `rgb(${red},${green},${blue})`;
     };
 
-    const isYearOrYears = (years) => {
+    const isYearOrYears = (years: number) => {
         if (years > 1) return getData(language).years;
         else return getData(language).year;
     };
 
-    const style = (language) => {
+    const style = (language: LanguageProps) => {
         const progress = (language.years / max) * 100;
         let color = determineColor(progress);
 
@@ -38,7 +38,7 @@ const PerformanceTable = ({ data, headers, id }) => {
         };
     };
 
-    const isLink = (link) => {
+    const isLink = (link?: string) => {
         return link && link !== "#";
     };
 
@@ -85,13 +85,13 @@ const PerformanceTable = ({ data, headers, id }) => {
     );
 };
 
-const PerformanceTableName = ({ entry }) => {
+const PerformanceTableName = ({ entry }: { entry: LanguageProps }) => {
     const { language } = useContext(LanguageContext);
 
     if (!entry.logo) {
         return (
             <span className="performance-table-entry_name">
-                {entry.name[language]}
+                {entry.name[language as "en" | "fr"]}
             </span>
         );
     }
@@ -100,9 +100,24 @@ const PerformanceTableName = ({ entry }) => {
         <img
             className="performance-table-entry_image"
             src={entry.logo}
-            alt={entry.name[language]}
+            alt={entry.name[language as "en" | "fr"]}
         />
     );
+};
+
+type LanguageProps = {
+    name: {
+        en: string;
+        fr: string;
+    };
+    years: number;
+    logo?: string;
+    link?: string;
+};
+type PerformanceTableProps = {
+    data: LanguageProps[];
+    headers: string[];
+    id: string;
 };
 
 export default PerformanceTable;
