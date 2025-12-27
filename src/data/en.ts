@@ -17,7 +17,7 @@ const en = {
     soft_skills: "My Soft-Skills",
     darkmode: "Dark",
     lightmode: "Light",
-    platforms: "Plateforms",
+    platforms: "Platforms",
 };
 
 export default en;
