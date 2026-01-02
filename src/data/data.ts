@@ -1,4 +1,4 @@
-import Factory from "../assets/Factory.png";
+export { default as image } from "../assets/Factory.png";
 import Cplusplus from "../assets/Cplusplus_logo.svg";
 import Javascript from "../assets/JavaScript_logo.png";
 import Java from "../assets/Java_logo.png";
@@ -17,7 +17,7 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.4.4";
+export const version = "v1.4.5";
 
 export const translations = ["en", "fr"];
 
@@ -32,15 +32,13 @@ export function getData(lang: string) {
     }
 }
 
-export const image = Factory;
-
 export const languages = [
     {
         name: {
-            en: "JavaScript",
-            fr: "JavaScript",
+            en: "JS/TS",
+            fr: "JS/TS",
         },
-        years: 2,
+        years: 2.5,
         logo: Javascript,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
@@ -49,7 +47,7 @@ export const languages = [
             en: "C++",
             fr: "C++",
         },
-        years: 3.5,
+        years: 4,
         logo: Cplusplus,
         link: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
@@ -58,7 +56,7 @@ export const languages = [
             en: "Java",
             fr: "Java",
         },
-        years: 3,
+        years: 3.5,
         logo: Java,
         link: "https://en.wikipedia.org/wiki/Java_(programming_language)",
     },
@@ -67,7 +65,7 @@ export const languages = [
             en: "Python",
             fr: "Python",
         },
-        years: 1,
+        years: 1.5,
         logo: Python,
         link: "https://en.wikipedia.org/wiki/Python_(programming_language)",
     },
@@ -88,21 +86,21 @@ export const domains = [
             en: "Web Development",
             fr: "Dévelopment Web",
         },
-        years: 4,
+        years: 4.5,
     },
     {
         name: {
             en: "App Development",
             fr: "Dévelopment App",
         },
-        years: 3,
+        years: 3.5,
     },
     {
         name: {
             en: "Competitive Programming",
             fr: "Programmation Compétitive",
         },
-        years: 2,
+        years: 3,
     },
     {
         name: {
@@ -144,7 +142,7 @@ export const domains = [
             en: "Artifical Intelligence",
             fr: "Intelligence Artificielle",
         },
-        years: 0,
+        years: 0.5,
     },
     {
         name: {
