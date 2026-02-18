@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { structure } from "../structure";
 
 // Mock IntersectionObserver
-global.IntersectionObserver = class IntersectionObserver {
+globalThis.IntersectionObserver = class IntersectionObserver {
     root: Element | null = null;
     rootMargin: string = "";
     thresholds: ReadonlyArray<number> = [];
