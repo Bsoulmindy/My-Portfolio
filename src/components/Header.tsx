@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 import ToggleModeButton from "./ToggleModeButton";
 import { DarkContext } from "../utils/DarkContext";
-import { translations, version } from "../data/data";
+import { getData, translations, version } from "../data/data";
 
 function Header() {
     const { language, selectLanguage } = useContext(LanguageContext);
@@ -12,40 +12,45 @@ function Header() {
 
     const changeLanguage = () => {
         const selector = document.getElementById(
-            "selector_language"
+            "selector_language",
         ) as HTMLSelectElement | null;
         const language = selector?.options[selector.selectedIndex].value;
         selectLanguage(language ?? "en");
     };
 
     return (
-        <header className="header" id="header">
-            <div className="select_language">
-                <img
-                    src={page_language}
-                    alt="language_icon"
-                    className={
-                        "language_icon " +
-                        (mode === "dark" ? "image-white" : "image-dark")
-                    }
-                />
-                <select
-                    id="selector_language"
-                    className="page_language"
-                    title={language}
-                    defaultValue={language}
-                    onChange={changeLanguage}>
-                    {translations.map((translation) => (
-                        <option key={translation} value={translation}>
-                            {translation.toUpperCase()}
-                        </option>
-                    ))}
-                </select>
+        <header>
+            <div className="header" id="header">
+                <div className="select_language">
+                    <img
+                        src={page_language}
+                        alt="language_icon"
+                        className={
+                            "language_icon " +
+                            (mode === "dark" ? "image-white" : "image-dark")
+                        }
+                    />
+                    <select
+                        id="selector_language"
+                        className="page_language"
+                        title={language}
+                        defaultValue={language}
+                        onChange={changeLanguage}>
+                        {translations.map((translation) => (
+                            <option key={translation} value={translation}>
+                                {translation.toUpperCase()}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+                <div className="toggle_mode">
+                    <ToggleModeButton />
+                </div>
+                <div className="version">{version}</div>
             </div>
-            <div className="toggle_mode">
-                <ToggleModeButton />
+            <div className="last_updated_header">
+                <span>{getData(language).update_date}</span>
             </div>
-            <div className="version">{version}</div>
         </header>
     );
 }

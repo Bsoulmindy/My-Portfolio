@@ -3,13 +3,13 @@
     flex-direction: row-reverse;
 }
 
-.header > .select_language {
+.header .select_language {
     border: 1px solid var(--primary-dark);
     display: flex;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.header > .select_language:hover {
+.header .select_language:hover {
     box-shadow: 0 0 5rem var(--primary-dark);
 }
 
@@ -75,4 +75,12 @@
     align-self: center;
     width: 100%;
     font-size: larger;
+}
+
+.last_updated_header {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    text-align: center;
+    margin: 1rem 0;
 }

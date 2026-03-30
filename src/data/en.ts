@@ -18,6 +18,7 @@ const en = {
     darkmode: "Dark",
     lightmode: "Light",
     platforms: "Platforms",
+    update_date: "Last updated : 30 Mar 2026",
 };
 
 export default en;
