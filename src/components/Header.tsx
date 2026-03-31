@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { LanguageContext } from "../utils/LanguageContext";
 import ToggleModeButton from "./ToggleModeButton";
 import { DarkContext } from "../utils/DarkContext";
-import { getData, translations, version } from "../data/data";
+import { translations, version } from "../data/data";
 
 function Header() {
     const { language, selectLanguage } = useContext(LanguageContext);
@@ -19,38 +19,33 @@ function Header() {
     };
 
     return (
-        <header>
-            <div className="header" id="header">
-                <div className="select_language">
-                    <img
-                        src={page_language}
-                        alt="language_icon"
-                        className={
-                            "language_icon " +
-                            (mode === "dark" ? "image-white" : "image-dark")
-                        }
-                    />
-                    <select
-                        id="selector_language"
-                        className="page_language"
-                        title={language}
-                        defaultValue={language}
-                        onChange={changeLanguage}>
-                        {translations.map((translation) => (
-                            <option key={translation} value={translation}>
-                                {translation.toUpperCase()}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-                <div className="toggle_mode">
-                    <ToggleModeButton />
-                </div>
-                <div className="version">{version}</div>
+        <header className="header" id="header">
+            <div className="select_language">
+                <img
+                    src={page_language}
+                    alt="language_icon"
+                    className={
+                        "language_icon " +
+                        (mode === "dark" ? "image-white" : "image-dark")
+                    }
+                />
+                <select
+                    id="selector_language"
+                    className="page_language"
+                    title={language}
+                    defaultValue={language}
+                    onChange={changeLanguage}>
+                    {translations.map((translation) => (
+                        <option key={translation} value={translation}>
+                            {translation.toUpperCase()}
+                        </option>
+                    ))}
+                </select>
             </div>
-            <div className="last_updated_header">
-                <span>{getData(language).update_date}</span>
+            <div className="toggle_mode">
+                <ToggleModeButton />
             </div>
+            <div className="version">{version}</div>
         </header>
     );
 }

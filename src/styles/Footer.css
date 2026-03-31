@@ -1,0 +1,14 @@
+.footer {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer .last_updated {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    text-align: center;
+    margin: 1rem 0;
+}

@@ -76,11 +76,3 @@
     width: 100%;
     font-size: larger;
 }
-
-.last_updated_header {
-    display: flex;
-    justify-content: center;
-    font-size: larger;
-    text-align: center;
-    margin: 1rem 0;
-}

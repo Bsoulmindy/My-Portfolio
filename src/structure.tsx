@@ -8,6 +8,7 @@ import { DarkProvider } from "./utils/DarkContext";
 import GlobalStyle from "./styles/GlobalStyle";
 import Controls from "./components/Controls";
 import Domains from "./components/Domains";
+import Footer from "./components/Footer";
 
 export const structure = (
     <React.StrictMode>
@@ -20,6 +21,7 @@ export const structure = (
                 <Domains />
                 <Languages />
                 <Projects />
+                <Footer />
             </LanguageProvider>
         </DarkProvider>
     </React.StrictMode>
