@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 5rem;
 }
 
 .footer .last_updated {
@@ -11,4 +12,10 @@
     font-size: larger;
     text-align: center;
     margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .footer .last_updated {
+        margin-bottom: 100px;
+    }
 }
