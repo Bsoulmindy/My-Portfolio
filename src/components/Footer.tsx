@@ -8,9 +8,9 @@ function Footer() {
 
     return (
         <footer className="footer">
-            <div className="last_updated">
-                <span>{getData(language).update_date}</span>
-            </div>
+            <span>
+                {getData(language).copyright} {getData(language).update_date}
+            </span>
         </footer>
     );
 }

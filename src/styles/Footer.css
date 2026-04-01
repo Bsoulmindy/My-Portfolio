@@ -1,21 +1,15 @@
 .footer {
-    min-height: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     margin-top: 5rem;
-}
-
-.footer .last_updated {
-    display: flex;
+    border-top: inset;
     justify-content: center;
-    font-size: larger;
+    font-size: large;
     text-align: center;
-    margin: 1rem 0;
+    padding: 1rem;
 }
 
 @media (max-width: 768px) {
-    .footer .last_updated {
+    .footer {
         margin-bottom: 100px;
     }
 }
