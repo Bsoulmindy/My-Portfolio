@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    margin-top: 5rem;
+    border-top: inset;
+    justify-content: center;
+    font-size: large;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-bottom: 100px;
+    }
+}

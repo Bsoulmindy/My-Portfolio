@@ -18,6 +18,8 @@ const fr = {
     darkmode: "Sombre",
     lightmode: "Clair",
     platforms: "Plateformes",
+    copyright: "© 2026 Bsoulmindy. Tous droits réservés.",
+    update_date: "Dernière mise à jour : 30 Mar 2026",
 };
 
 export default fr;

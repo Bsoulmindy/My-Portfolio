@@ -3,13 +3,13 @@
     flex-direction: row-reverse;
 }
 
-.header > .select_language {
+.header .select_language {
     border: 1px solid var(--primary-dark);
     display: flex;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.header > .select_language:hover {
+.header .select_language:hover {
     box-shadow: 0 0 5rem var(--primary-dark);
 }
 
