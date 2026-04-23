@@ -19,7 +19,7 @@ const en = {
     lightmode: "Light",
     platforms: "Platforms",
     copyright: "© 2026 Bsoulmindy. All rights reserved.",
-    update_date: "Last updated : 30 Mar 2026",
+    update_date: "Last updated : 23 Apr 2026",
 };
 
 export default en;
