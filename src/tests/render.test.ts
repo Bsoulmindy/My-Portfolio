@@ -7,6 +7,8 @@ globalThis.IntersectionObserver = class IntersectionObserver {
     root: Element | null = null;
     rootMargin: string = "";
     thresholds: ReadonlyArray<number> = [];
+    scrollMargin: string = "0px 0px 0px 0px";
+
     disconnect() {
         return null;
     }
