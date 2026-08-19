@@ -1,13 +1,24 @@
 .projects_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0 1rem;
     gap: 2rem;
 }
 
-/* Each child should be a Project row */
 .projects_container > * {
-    flex: 1 1;
     margin-bottom: 1rem;
+}
+
+.projects_container > :first-child {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+    .projects_container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects_container > :first-child {
+        grid-column: auto;
+    }
 }
