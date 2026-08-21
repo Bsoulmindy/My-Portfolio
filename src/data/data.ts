@@ -9,6 +9,7 @@ import Github from "../assets/Github.png";
 import Leetcode from "../assets/Leetcode.png";
 import RegionsMusicIcon from "../assets/regions-music.png";
 import RevisionAssistantIcon from "../assets/revision_assistant_icon.png";
+import OverseerIcon from "../assets/overseer_icon.png";
 import Communication from "../assets/Communication.png";
 import ProblemSolving from "../assets/Problem_Solving.png";
 import Teamwork from "../assets/Teamwork.png";
@@ -17,7 +18,7 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.4.7";
+export const version = "v1.4.8";
 
 export const translations = ["en", "fr"];
 
@@ -161,6 +162,26 @@ export const domains = [
 ];
 
 export const personalProjects = [
+    {
+        name: "Overseer",
+        image: OverseerIcon,
+        link: "https://overseer.optidevnovate.com/",
+        description: {
+            en: "Monitoring and automation tool that lets users set up rules for what to watch and what to do. The application constantly monitors the system for those events, and whenever a match is found, it carries out the predefined actions automatically.",
+            fr: "Outil de surveillance et d'automatisation qui permet aux utilisateurs de définir des règles sur ce qu'il faut surveiller et sur ce qu'il faut faire. L'application surveille en permanence le système à la recherche de ces événements, et dès qu'une correspondance est trouvée, elle exécute automatiquement les actions prédéfinies.",
+        },
+        tags: [
+            {
+                text: {
+                    en: "App",
+                    fr: "App",
+                },
+                backgroundColor: "#006600",
+                textColor: "white",
+            },
+        ],
+        platforms: ["Desktop"],
+    },
     {
         name: "Revision Assistant",
         image: RevisionAssistantIcon,
