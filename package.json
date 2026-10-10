@@ -4,22 +4,22 @@
     "type": "module",
     "private": true,
     "dependencies": {
-        "@testing-library/dom": "^10.4.1",
+        "@testing-library/dom": "^10.4.2",
         "@testing-library/jest-dom": "6.9.1",
-        "@testing-library/user-event": "^14.6.1",
-        "@vitejs/plugin-react": "^6.0.1",
+        "@testing-library/user-event": "^14.6.7",
+        "@vitejs/plugin-react": "^6.1.2",
         "nth-check": "^3.0.1",
-        "prettier": "^3.8.3",
+        "prettier": "^3.9.9",
         "prop-types": "^15.8.1",
-        "react": "^19.2.5",
-        "react-dom": "^19.2.5",
+        "react": "^19.3.0",
+        "react-dom": "^19.3.0",
         "smoothscroll-polyfill": "^0.4.4",
-        "styled-components": "^6.3.10",
-        "terser": "^5.46.2",
-        "vite": "^8.0.10",
+        "styled-components": "^6.5.3",
+        "terser": "^5.51.2",
+        "vite": "^8.3.4",
         "vite-plugin-svgr": "^5.2.0",
         "vite-tsconfig-paths": "^6.1.1",
-        "web-vitals": "^5.2.0"
+        "web-vitals": "^5.3.0"
     },
     "scripts": {
         "start": "vite",
@@ -46,15 +46,15 @@
         ]
     },
     "devDependencies": {
-        "@testing-library/react": "^16.3.2",
-        "@types/react": "^19.2.14",
-        "@types/react-dom": "^19.2.3",
+        "@testing-library/react": "^16.3.3",
+        "@types/react": "^19.3.0",
+        "@types/react-dom": "^19.3.0",
         "@types/smoothscroll-polyfill": "^0.3.4",
         "@types/styled-components": "^5.1.36",
-        "jsdom": "^29.0.2",
-        "postcss": "^8.5.6",
+        "jsdom": "^29.1.1",
+        "postcss": "^8.5.29",
         "typescript": "^6.0.3",
-        "vitest": "^4.1.5"
+        "vitest": "^4.1.11"
     },
     "jest": {
         "collectCoverageFrom": [
