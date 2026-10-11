@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { DarkContext } from "../utils/DarkContext";
-import { getData } from "../data/data";
-import { LanguageContext } from "../utils/LanguageContext";
+import { DarkContext } from "@/utils/DarkContext";
+import { getData } from "@/data/data";
+import { LanguageContext } from "@/utils/LanguageContext";
 
 function ToggleModeButton() {
     const { language } = useContext(LanguageContext);

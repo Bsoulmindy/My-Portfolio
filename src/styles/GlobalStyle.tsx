@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { useContext } from "react";
-import { DarkContext } from "../utils/DarkContext";
-import backgroundImage from "../assets/grid.png";
+import { DarkContext } from "@/utils/DarkContext";
+import backgroundImage from "@/assets/grid.png";
 
 const StyledGlobalStyle = createGlobalStyle<{ theme: { isDarkMode: boolean } }>`
         :root {

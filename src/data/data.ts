@@ -173,10 +173,10 @@ export const personalProjects = [
         tags: [
             {
                 text: {
-                    en: "App",
-                    fr: "App",
+                    en: "v0.3.x (Alpha)",
+                    fr: "v0.3.x (Alpha)",
                 },
-                backgroundColor: "#006600",
+                backgroundColor: "#4D4D4D",
                 textColor: "white",
             },
         ],
@@ -193,8 +193,8 @@ export const personalProjects = [
         tags: [
             {
                 text: {
-                    en: "App",
-                    fr: "App",
+                    en: "v1.0.x (Stable)",
+                    fr: "v1.0.x (Stable)",
                 },
                 backgroundColor: "#006600",
                 textColor: "white",
@@ -213,8 +213,8 @@ export const personalProjects = [
         tags: [
             {
                 text: {
-                    en: "App",
-                    fr: "App",
+                    en: "v1.0.x (Stable)",
+                    fr: "v1.0.x (Stable)",
                 },
                 backgroundColor: "#006600",
                 textColor: "white",

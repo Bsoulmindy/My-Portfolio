@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "../styles/Control.css";
+import "@/styles/Control.css";
 
 function Control({ isActive, children, onClick }: Readonly<ControlProps>) {
     return (

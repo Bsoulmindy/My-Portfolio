@@ -1,8 +1,8 @@
-import { getData, personalProjects } from "../data/data";
-import "../styles/Projects.css";
+import { getData, personalProjects } from "@/data/data";
+import "@/styles/Projects.css";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext";
-import Project from "./Project";
+import { LanguageContext } from "@/utils/LanguageContext";
+import Project from "@/components/Project";
 
 function Projects() {
     const { language } = useContext(LanguageContext);

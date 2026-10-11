@@ -1,4 +1,4 @@
-import "../styles/ProjectTicket.css";
+import "@/styles/ProjectTicket.css";
 
 function ProjectTag({
     text,
