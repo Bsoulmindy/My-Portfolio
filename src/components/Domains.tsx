@@ -1,8 +1,8 @@
-import "../styles/PerformanceTable.css";
-import { domains, getData } from "../data/data.js";
+import "@/styles/PerformanceTable.css";
+import { domains, getData } from "@/data/data";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext.js";
-import PerformanceTable from "./PerformanceTable.js";
+import { LanguageContext } from "@/utils/LanguageContext";
+import PerformanceTable from "@/components/PerformanceTable";
 
 function Domains() {
     const { language } = useContext(LanguageContext);

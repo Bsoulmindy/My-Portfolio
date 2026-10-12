@@ -1,10 +1,10 @@
-import "../styles/Header.css";
-import page_language from "../assets/page_language.svg";
+import "@/styles/Header.css";
+import page_language from "@/assets/page_language.svg";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext";
-import ToggleModeButton from "./ToggleModeButton";
-import { DarkContext } from "../utils/DarkContext";
-import { translations, version } from "../data/data";
+import { LanguageContext } from "@/utils/LanguageContext";
+import ToggleModeButton from "@/components/ToggleModeButton";
+import { DarkContext } from "@/utils/DarkContext";
+import { translations, version } from "@/data/data";
 
 function Header() {
     const { language, selectLanguage } = useContext(LanguageContext);

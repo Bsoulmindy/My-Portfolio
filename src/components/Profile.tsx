@@ -1,8 +1,8 @@
-import "../styles/Profile.css";
-import { getData, image, media_links } from "../data/data.js";
+import "@/styles/Profile.css";
+import { getData, image, media_links } from "@/data/data";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext.js";
-import Framework from "./Framework.js";
+import { LanguageContext } from "@/utils/LanguageContext";
+import Framework from "@/components/Framework";
 
 function Profile() {
     const { language } = useContext(LanguageContext);

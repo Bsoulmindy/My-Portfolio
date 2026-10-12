@@ -18,7 +18,7 @@ import Creativity from "../assets/Creativity.png";
 import en from "./en.js";
 import fr from "./fr.js";
 
-export const version = "v1.4.8";
+export const version = "v1.4.9";
 
 export const translations = ["en", "fr"];
 
@@ -48,7 +48,7 @@ export const languages = [
             en: "C++",
             fr: "C++",
         },
-        years: 4,
+        years: 4.25,
         logo: Cplusplus,
         link: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
@@ -57,7 +57,7 @@ export const languages = [
             en: "Java",
             fr: "Java",
         },
-        years: 3.5,
+        years: 3.75,
         logo: Java,
         link: "https://en.wikipedia.org/wiki/Java_(programming_language)",
     },
@@ -66,7 +66,7 @@ export const languages = [
             en: "Python",
             fr: "Python",
         },
-        years: 1.5,
+        years: 1.75,
         logo: Python,
         link: "https://en.wikipedia.org/wiki/Python_(programming_language)",
     },
@@ -94,14 +94,14 @@ export const domains = [
             en: "App Development",
             fr: "Dévelopment App",
         },
-        years: 3.5,
+        years: 4.0,
     },
     {
         name: {
             en: "Competitive Programming",
             fr: "Programmation Compétitive",
         },
-        years: 3,
+        years: 3.5,
     },
     {
         name: {
@@ -143,7 +143,7 @@ export const domains = [
             en: "Artifical Intelligence",
             fr: "Intelligence Artificielle",
         },
-        years: 0.5,
+        years: 1,
     },
     {
         name: {
@@ -173,10 +173,10 @@ export const personalProjects = [
         tags: [
             {
                 text: {
-                    en: "App",
-                    fr: "App",
+                    en: "v0.3.x (Alpha)",
+                    fr: "v0.3.x (Alpha)",
                 },
-                backgroundColor: "#006600",
+                backgroundColor: "#4D4D4D",
                 textColor: "white",
             },
         ],
@@ -193,8 +193,8 @@ export const personalProjects = [
         tags: [
             {
                 text: {
-                    en: "App",
-                    fr: "App",
+                    en: "v1.0.x (Stable)",
+                    fr: "v1.0.x (Stable)",
                 },
                 backgroundColor: "#006600",
                 textColor: "white",
@@ -213,8 +213,8 @@ export const personalProjects = [
         tags: [
             {
                 text: {
-                    en: "App",
-                    fr: "App",
+                    en: "v1.0.x (Stable)",
+                    fr: "v1.0.x (Stable)",
                 },
                 backgroundColor: "#006600",
                 textColor: "white",

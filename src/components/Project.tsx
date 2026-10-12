@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import "../styles/Project.css";
-import ProjectTag from "./ProjectTicket";
+import "@/styles/Project.css";
+import ProjectTag from "@/components/ProjectTicket";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext";
-import { getData } from "../data/data";
-import Screen from "../assets/screen.svg?react";
+import { LanguageContext } from "@/utils/LanguageContext";
+import { getData } from "@/data/data";
+import Screen from "@/assets/screen.svg?react";
 
 function Project({ project }: Readonly<{ project: ProjectProps }>) {
     const { language } = useContext(LanguageContext);

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import "../styles/PerformanceTable.css";
-import { getData } from "../data/data.js";
+import "@/styles/PerformanceTable.css";
+import { getData } from "@/data/data";
 import { useContext } from "react";
-import { LanguageContext } from "../utils/LanguageContext.js";
+import { LanguageContext } from "@/utils/LanguageContext";
 
 const PerformanceTable = ({ data, headers, id }: PerformanceTableProps) => {
     const { language } = useContext(LanguageContext);

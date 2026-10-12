@@ -1,4 +1,4 @@
-import "../styles/Framework.css";
+import "@/styles/Framework.css";
 
 function Framework({ name, image, link = "#" }: Readonly<FrameworkProps>) {
     const content = (

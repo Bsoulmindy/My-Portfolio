@@ -8,13 +8,16 @@
         "allowSyntheticDefaultImports": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
-        "module": "nodenext",
-        "moduleResolution": "nodenext",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "types": ["vitest/globals"]
+        "types": ["vitest/globals"],
+        "paths": {
+            "@/*": ["./src/*"]
+        }
     },
     "include": ["src"],
     "references": [{ "path": "./tsconfig.node.json" }]
